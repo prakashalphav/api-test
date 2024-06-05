@@ -1,0 +1,85 @@
+ 
+.nav{
+   
+    background: linear-gradient(0deg, var(--bg-3rd), var(--bg-3rd)), linear-gradient(0deg, var(--bg-brand-contrast), var(--bg-brand-contrast));//linear-gradient(0deg, #101529, #101529), linear-gradient(0deg, #546689, #546689);
+    border-top: 0.25px solid var(--bg-brand-heavy-contrast);// 0.25px solid #546689;
+
+    .menu {
+        z-index: 1;
+        // overflow: hidden;
+        @apply text-center;
+        @apply relative;
+        color:  #ffffff;
+       
+        
+        svg {
+            @apply mx-auto;
+        }
+        &.active{
+            // color: var(--bottom-nav-color-active); // #A296F4; //#CCBEFA  
+            color:var(--text-brand);// #29B4D5;
+
+            // .title {
+            //     display: block;
+            // }
+        }
+    }
+    // .menu:not(.center){
+    //     width: 40px;
+    // }
+    
+    .circleSurface{
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);  //linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+        top: -17px;
+        left : 50%;
+        transform : translateX(-50%);
+        z-index: -1;
+        transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .menu.center{ 
+        transform: translateY(-20%);
+        font-size: 30px;
+        transition: transform 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
+    
+        .icon {
+            background:linear-gradient(0deg, var(--bg-3rd), var(--bg-3rd)), linear-gradient(0deg, var(--bg-brand-contrast), var(--bg-brand-contrast));// linear-gradient(0deg, #101529, #101529), linear-gradient(0deg, #546689, #546689);
+            color : var(--text);
+            width: 56px;
+            height: 56px;
+            top: -15px;
+            left : 50%;
+            transform : translateX(-50%);
+            position: relative;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+    }
+     
+
+}
+
+
+// #filter-svg {
+//     display: none;
+// }
+
+
+#popup-menu{
+    z-index: -1;
+    opacity: 0;
+    // background: var(--shadow-mobileBottomMenu);
+    background: #080A0CE0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    transform: translateY(0);
+    box-shadow: 0px 1px 6px 0px #FFFFFF40;
+    &.active{
+        display: flex;
+        opacity: 1;
+        transform: translateY(-65px);
+    }
+}

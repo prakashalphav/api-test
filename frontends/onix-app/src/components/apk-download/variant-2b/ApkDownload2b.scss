@@ -1,0 +1,18 @@
+.outerWrapper{
+  width: 100%;
+  height: auto;
+  @screen sm {
+    width: 450px;
+    height: 252px;
+  }
+}
+.qrImg{
+  height: 100px;
+  max-height: 50%; //used for smaller mobile screen (320px width)
+  @screen sm {
+    max-height: unset;
+  }
+  @screen md {
+    height: 150px;
+  }
+}

@@ -1,0 +1,79 @@
+.header{
+    background: #262626;
+    //    background: var(--bg);  
+   color: var(--text); 
+}
+
+.logo{
+    @media (max-width: theme('screens.md')) {
+        max-height: 64px;
+    } 
+    @screen md {
+        max-height: 70px;
+    }
+}
+.headerWrapper{
+    background: linear-gradient(0deg, #262626, #262626), linear-gradient(0deg, #B4B5B7, #B4B5B7);
+    &.fixed, .topMenu { 
+        @media (max-width: theme('screens.md')) {
+            height: auto;
+        }
+
+        @screen md {
+            height: auto;
+        }
+    } 
+}
+    
+.blkPadding{
+    @media (max-width: theme('screens.md')) {
+        height: 64px;
+    } 
+    @screen md {
+        height: 70px;
+    }
+}
+
+.registerBtn:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+@screen lg{
+    .header{
+        background:linear-gradient(180deg, var(--bg) 65.38%, transparent 96.71%)
+
+    }
+}
+
+.walletBalanceText{
+    background: var(--primary, linear-gradient(0deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media (max-width: theme('screens.md')) {
+        max-width: 135px;
+    }
+
+    @screen md {
+        max-width: fit-content;
+    }
+}
+
+.walletReloadBtn{
+    color: #EED904;
+}
+
+.walletIcon{
+    background: linear-gradient(360deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%);
+    color: #fff;
+}
+.headerInnerWrapper{
+    background: #000000;
+}

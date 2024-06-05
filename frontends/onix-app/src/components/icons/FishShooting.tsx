@@ -1,0 +1,27 @@
+
+
+export const FishShootingIcon= ()=>(<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1em" height="1em" viewBox="0 0 35 31" enable-background="new 0 0 35 31" xml:space="preserve">  <image id="image0" width="35" height="31" x="0" y="0"
+href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAQAAADHaLwEAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+cwAACxMAAAsTAQCanBgAAAPdSURBVEjHrZR/TJR1HMffz52AwHO/QCRuMt0EDJeBWwYWtabWkjxx
+RhuZ/ZoZgs76ox+rv6jMFixzThzU5qECabNglGEEm5HM5gEVvwIJmHoGcggexx3H3XPPuz/uAjnu
+2m30/u/zfD+f1/P+vJ8fwAKNVdCrAixG1q+9FNlBHQBQYESXyFjqmchE6hk7KjJs/swSfwgFOR0A
+mtAnZB9mpJTAeEF3fxTCuURQQLjh0UrLXJjkOCbkv9GvuPTBlSJ5gRdHJimzkQMSA6pDvuh/acT9
+tuCPkcqU+YGXncHvaJsJdydG1o72mKftpMPpwXJ15urX7H4YxmMA0QsRw6i21TW2/6hsVC53x6U0
+tjpBgQDA9eUGo8M/m1cDQU66SsrM5VO9jg2R+WN6Ibm/wLZqdERWcKD51r6oylP2znluqMB1rJit
+IACQUXTjs1yHCTie4Xih7fGmyigx0fpX7JP6dENds6lk+ir8A3bkzuU25GmwDLrIkt4YH1inOXZ5
+rHFyB+OoAHQaVQoEBJJUNYcpbmgrPV07OBm9bu58md7wTfd07bn34vwn78nmh4g31TND0pTslsKU
+WlNxX0p75W27vXN2yVXOV2r0n7Z8bxy3BPBAPd+SmzxmOin7rMju6ebPEQZBsxoAGO3I7a871J1a
+qs6EMuAiQwVtUgOr5TL3Tx7SxRa28oLnkUvadACgSto+fLb61pZa1R6dBsGlMoj7xTzVo+qkniPk
+J53RL4sHorZCoECDq1S2kqe7VRvvDZNK/JdGj7ZPqZO8jXxDHpTZx2skSc87s4iVJ9613Bw9P7Q0
+KGbk2ImjAMBkuZccYPZV8aBYuKmlwmOXucHb89V+7cqc86//bAv+E6kp2v0Y4EziOHldTj/ke4pC
+dFqy8cU93h6jAYBwIK3+cFDMri2IYpjnT5J8psLv1fJVT2dNZvGJX6q2PRU8nHBA2kmSlf1arS+L
+Fd0583qWrs3ILUzcEeT9/VfWs6TMM7t9kIjh7vseBqh2ftHfd/dX285gcwo/TAQgcbrLV5b3OkdM
+VLA+fO+pO1nmeqN7M0LRt8WkTPMmAOBzZMlBwJX5fs9xaU2OTpO27U59CJAixcWTVpmkEaDAazNM
+TQY6dn24UVwLAYCiIxQMhAtX3N6v6ohzO9llhhJY89Dlrd5jW5yxJqSlNudN8A9aSFImO7xDwt7C
+m+ssCXzwXEVsRpD7+9Xhz34X2dUqZue+FJOGkfKEfQAAMf6B/NQWi+n2pCkkN0CMWqcBxLi8j8iJ
+qhCHgkuj+23C3rFoDFD9pcdzV7dojHZ9i23m+f/Bz8fxjAmt8x81YSYS6kxPYAAAACV0RVh0ZGF0
+ZTpjcmVhdGUAMjAyMy0wMi0yN1QwOToxNjo0OCswMTowMCyJJ2YAAAAldEVYdGRhdGU6bW9kaWZ5
+ADIwMjMtMDItMjdUMDk6MTY6NDgrMDE6MDBd1J/aAAAAAElFTkSuQmCC" />
+</svg>
+);

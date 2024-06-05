@@ -1,0 +1,87 @@
+.header{
+    background: var(--bg);//#000000;
+  
+   color: var(--text); 
+}
+
+
+.optionsContainer{ 
+    background: var(--bg-brand); 
+    color:var(--text-onBgBrand);
+}
+
+.logo{
+    @media (max-width: theme('screens.md')) {
+        max-height: 64px;
+    } 
+    @screen md {
+        max-height: 70px;
+    }
+}
+.headerWrapper{
+    color : var(--text-onBgBrand);
+    background: var(--bg-brand-2nd) ;//#0A1523;
+}
+    
+.blkPadding{
+    @media (max-width: theme('screens.md')) {
+        height: 98px;
+        transition: all 0.35s ease-in;
+    } 
+   
+    &.showApkDownload{
+        @media (max-width: theme('screens.md')) {
+            height: 155px;
+          
+        }
+    }
+}
+
+.registerBtn{
+    background: var(--btn) ;// radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%) ,radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%) ,   linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    color: var(--text-onBtn);//#13052E;
+}
+
+
+
+@screen lg{
+    .header{
+        background:linear-gradient(180deg, var(--bg) 65.38%, transparent 96.71%)
+
+    }
+    .loginBtn:before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 0.5rem;
+        padding: 2px;
+        background:  var(--bg-accent);//linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+  
+}
+ 
+.walletIcon{
+    background: var(--bg-brand-blend) ;// #00000050;
+    color:var(--text-onBgBrand);// #fff;
+}
+.walletBtn{
+    background: radial-gradient(80.77% 141.16% at 33.19% 19.23%, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);//radial-gradient(80.77% 141.16% at 33.19% 19.23%, #55C6EF 0%, #43A7DD 100%);
+    color:var(--text-onBgBrand);
+}
+.sideMenuBtn{
+    color : var(--text-accent);
+}
+.transactionBtn{
+    background: var(--bg-accent);//radial-gradient(80.77% 141.16% at 33.19% 19.23%, #D79B00 0%, #D79B00 100%);
+    color : var(--text-onBgAccent);
+}
+.langDropdown{
+    background: var(--bg-brand-blend);//#161616
+}
+.announcementWrapper:after{
+    background: linear-gradient(to right, transparent, var(--bg));
+  }

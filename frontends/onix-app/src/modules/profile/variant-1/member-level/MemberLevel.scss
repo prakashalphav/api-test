@@ -1,0 +1,111 @@
+
+ 
+.title-secondary {
+    // color: #A0A0A0;
+    color:var(--text-3rd);
+}
+.transparent-bg {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, #090A12 100%);
+}
+.black-bg {
+    background: #000;
+}
+.New-circle-bg {
+    background: #fff;
+}
+.Regular-circle-bg {
+    background: #5299A3;
+}
+.Silver-circle-bg {
+    background: #C1C1C1;
+}
+.Gold-circle-bg {
+    background: #FFDB32;
+}
+.Platinum-circle-bg {
+    background: #935558;
+}
+
+.Regular-bg {
+    background: url(/images/ui/level_regular_bg.png) no-repeat center;
+    background-size: cover;
+    .highlight-text {
+        color: #5CBECC;
+    }
+}
+.Silver-bg {
+    background: url(/images/ui/level_silver_bg.png) no-repeat center;
+    background-size: cover;
+    .highlight-text {
+        color: #C9C9C9;
+    }
+}
+.Gold-bg {
+    background: url(/images/ui/level_gold_bg.png) no-repeat center;
+    background-size: cover;
+    .highlight-text {
+        color: #FFF246;
+    }
+}
+.Platinum-bg {
+    background: url(/images/ui/level_platinum_bg.png) no-repeat center;
+    background-size: cover;
+    .highlight-text {
+        color: #CB9A9C;
+    }
+}
+.profile-inner-container{
+    background: var(--profile-container-bg);
+    color: var(--profile-container-text);
+}
+.slider{
+    background: var(--toggle-btn-active-bg);
+    border: 1px solid var(--toggle-btn-bg);
+    &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        left: 4px;
+        bottom: 3px;
+        background: var(--toggle-btn-active-color);
+        transition: all;
+        border-radius: 50%;
+        transform: translateX(26px);
+    }
+}
+ 
+.profile-field-text{
+    color: var(--text-muted);
+}
+.level-desc-label{
+    color: var(--memberlvl-label-color);
+}
+.level-desc-value{
+    color: var(--memberlvl-value-color);
+}
+.level-desc-box{
+    background: var(--memberlvl-desc-bg);
+}
+.level-desc-box-inner{
+    background: var(--memberlvl-desc-inner-bg);
+}
+.exclusive-desc{
+    color: var(--memberlvl-desc-bg2);
+}
+@media only screen and (min-width: 1024px) {
+    .profile-outer-container{
+        background-color: var(--profile-muted-bg); 
+    }
+    .field-box{
+        background: transparent;
+        border: 0; 
+        color:inherit;
+    }
+}
+
+
+
+
+

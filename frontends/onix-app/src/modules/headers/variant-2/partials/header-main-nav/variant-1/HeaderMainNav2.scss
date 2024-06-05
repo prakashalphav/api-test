@@ -1,0 +1,67 @@
+.headerMainNav{
+
+  /* Fallback for browsers that do not support color-mix */
+  --bg-brand-heavy-contrast-mix-opacity: var(--bg-brand-heavy-contrast);
+  @supports (color: color-mix(white black)) {
+     /*mix to make color have some transparency*/
+     --bg-brand-heavy-contrast-mix-opacity: color-mix(in srgb, var(--bg-brand-heavy-contrast), #0000 5%);
+    // equivalent to - rgba(192, 172, 255, 0.90) 
+    
+  }
+
+  --bg-scrollbarTrack:#E9E7E7;/*this can hardcode because the content is hardcoded to be white bg*/
+}
+.registerBtn{
+    color: var(--text-onBtn);
+    background:var(--btn);
+    
+    // --btn : linear-gradient(180deg, #FFC325 0%, #FF9C19 100%);/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */ 
+}
+.sideOptsBtn, .contactBtn, .avatarProfile{
+  background: var(--bg-brand);
+
+  // --bg-brand:#323232;
+  color : var(--bg-brand-heavy-contrast);
+}
+
+
+.content{ 
+  background: linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%); 
+  color:var(--text-onBgBrand);
+}
+.navItem{
+  min-width: 70px;
+  @screen xl{
+    min-width: 90px;
+  }
+}
+
+.navItem:hover{
+    background: linear-gradient(180deg, transparent 0%, #323232 83.95%);
+    font-weight: 700;
+}
+
+.contentInner{
+ 
+background: linear-gradient(180deg, var(--bg-brand-heavy-contrast-mix-opacity) 0%, rgba(255, 255, 255, 0.90) 100%);/*content is hardcoded to be white bg*/
+color: #000;/*content is hardcoded to be white bg*/
+//linear-gradient(180deg, rgba(173, 173, 173, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%);
+ 
+}
+
+
+.hotLabel{
+    background: rgb(228, 6, 6);
+}
+
+.welcomeText{
+    color: var( --bg-brand-heavy-contrast);
+}
+.loginBtn, .registerBtn, .sideOptsBtn{
+  transition: transform .3s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+ 

@@ -1,0 +1,67 @@
+.mainNavWrapper{
+  background: linear-gradient(0deg, var(--bg-2nd), var(--bg-2nd)),linear-gradient(0deg, var(--bg-3rd), var(--bg-3rd));//linear-gradient(0deg, #101529, #101529),linear-gradient(0deg, #252D38, #252D38);
+}
+
+ 
+.marqueeAnn, .downloadAppWrapper{
+  background: var(--bg-3rd);//#232934;
+  // color:var(--text-onBgBrand);
+  // background: linear-gradient(180deg, transparent, var(--bg-brand-2nd) 100%);
+}
+
+.depositBtn{
+ 
+  box-shadow: 0px 3px 3px 0px #FFFFFF66 inset;
+  background: var(--bg-accent);// linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+  color: var(--text-onBgAccent);
+  transition: transform 1000ms;
+}
+.downloadWrapper, .depositWrapper{
+  background: var(--bg-3rd);//#1B2435;
+  transition: transform 500ms;
+}
+
+.depositWrapper:hover, .downloadWrapper:hover
+{
+    transform: translateY(-5px);
+}
+
+.downloadBtn{
+  box-shadow: 0px 3px 3px 0px var(--bg-4th) inset; //#FFFFFF52
+  background: var(--bg-3rd) ;// #495363;
+  transition: transform 1000ms;
+}
+
+// .downloadSubContent{
+//   color: var(--text-3rd);//#C6D0E3
+// }
+
+.faqBtn{
+  box-shadow: 0px 4px 0px 0px var(--text-3rd);// 0px 4px 0px 0px #4A6382;
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: var(--text-3rd);// #4A6382;
+  background:linear-gradient(0deg,   var(--bg-brand-blend), var(--bg-brand-blend)),
+  linear-gradient(0deg, var(--bg-4th), var(--bg-4th));//linear-gradient(0deg, #1B2435, #1B2435), linear-gradient(0deg, #4A6382, #4A6382);
+  transition: transform 1000ms;
+}
+
+.downloadBtn:active, .faqBtn:active,
+.depositBtn:active{
+  transform: scale(.7);
+}
+
+.faqIcon{
+  color:var(--text-accent);// #29B4D5;
+}
+
+.faqText{
+  background:  linear-gradient(90deg, var(--text-accent) 0%, var(--text-3rd) 100%);// linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.seeAllText{
+  color:var(--text-3rd);// #B1C5D4;
+}

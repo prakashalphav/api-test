@@ -1,0 +1,50 @@
+
+.games-slider{
+    
+
+  .splide__slide  {
+      .image-wrap {
+        transition: transform 400ms linear, opacity 400ms linear, background-color 400ms linear;
+        transform: scale(0.8);
+        transform-origin: bottom;
+        background: var(--gameslider-item-bg);
+      }
+      img{
+        display: block;
+        transition:   background-color 400ms linear;
+        background-color: var(--gameslider-img-bg);
+        opacity: 0.7;
+    }
+  }
+    // Active Slide
+.splide__slide.is-active {
+    .image-wrap {
+      transform: scale(1);
+      background: var(--gameslider-item-active-bg);
+    }
+    img {
+      background-color: none;
+      opacity: 1;
+    }
+  }
+
+  .splide__arrow {
+
+ 
+    color: var(--gameslider-nav-text);
+    background: var(--gameslider-nav-bg);
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    padding: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 2.5em; 
+    height: 2.5em;
+    z-index: 1;
+  }
+}

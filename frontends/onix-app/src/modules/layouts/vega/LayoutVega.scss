@@ -1,0 +1,48 @@
+/* only for Vega specific color styles*/
+
+
+@import '../../../css/fonts/jackpot/clarendon-serial-heavyregular';
+
+.jackpotText{
+    font-family:'clarendon-serial-heavyregular' ;
+}
+
+
+.profilePopupMenu{
+    @screen sm{ 
+      top: 0 !important;
+      right: -1.5rem !important;
+    }
+   
+     @screen md{
+      top: 0 !important;
+      right: -1.5rem !important;
+    }
+   
+     @screen lg{
+      top: -4rem !important;
+    }
+   
+     @screen xl{
+       top: -4rem !important;
+     }
+  }
+  
+  .walletPopUpMenu,.helpPopUpMenu{
+    @screen sm{ 
+      top: -0.6rem !important
+    }
+   
+     @screen md{
+      top: -0.6rem !important;
+    }
+   
+     @screen lg{
+      top: -4rem !important;
+    }
+   
+     @screen xl{
+       top: -4rem !important;
+     }
+    
+  }

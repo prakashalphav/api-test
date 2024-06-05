@@ -1,0 +1,12 @@
+
+
+.contact-box{
+    background: var(--contact-box-bg);
+    border-top: 2px solid var(--contact-box-bd-color);
+    & .desc-1{
+        color: var(--contact-box-desc-1);
+    }
+    & .desc-2{
+        color: var(--contact-box-desc-2);
+    }
+}

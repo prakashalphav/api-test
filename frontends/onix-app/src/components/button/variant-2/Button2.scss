@@ -1,0 +1,14 @@
+
+
+.btn-2{
+    background: transparent;
+    color:var(--container-text-color);
+    border: 1px solid var(--container-text-color);
+    background-size: cover;
+}
+.btn-2:hover{
+   opacity: 0.5; 
+}
+.btn-2:disabled{
+    opacity: 0.5; 
+ }

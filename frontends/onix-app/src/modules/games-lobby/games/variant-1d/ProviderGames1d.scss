@@ -1,0 +1,17 @@
+.providerGames {
+   
+} 
+.inputSearch { 
+  width: 1em;
+  &--expand { 
+    width:  10em;  
+  }
+  @screen md{
+    width:  20em;
+  }
+}
+ 
+.listTitle{
+  color : var(--text);
+}
+ 

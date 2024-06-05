@@ -1,0 +1,47 @@
+
+// aside {
+//    --bg-body :  var(--popup-bg);
+//    --bg-head : var(--popup-head-bg);
+//    --text-brand :   var(--popup-text-accent);
+//    --info-wrap-bg :   var(--popup-info-b);
+//    --light-bg :   var(--popup-light-bg);
+//    --text-dark :  var(--popup-text-dark)  ; 
+//    --text-light :   var(--popup-text-light);
+
+// }
+
+.walletPopUpMenu {
+   background: var(--bg-3rd);
+   color: var(--text);
+ 
+   & li:hover{
+     background:var(--bg-4th);
+   }
+   @media (max-width: theme('screens.md')) {
+      width: 250px; 
+  }
+
+  @screen md {
+      width: 278px; 
+  }
+}
+
+.menuTab{
+   color: var(--text);
+}
+.walletsTitle{
+   // color:#97ACCB;
+   color: var(--text-3rd);
+}
+.subMenu{
+   // color: #CDDAE0;
+   color: var(--text-2nd);
+}
+.line{
+   background: #57636D;
+   height: 1px;
+}
+.transferIcon{
+   color: #F4E303;
+}
+ 

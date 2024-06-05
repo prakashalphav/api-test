@@ -1,0 +1,48 @@
+.categoryTab:hover{
+    background: transparent; 
+     /* linear-gradient(180deg, rgba(33, 58, 92, 0) 0%, #213A5C 83.95%); */
+    font-weight: 700;
+}
+
+.hotLabel{
+    background: rgb(228, 6, 6);
+}
+
+.downloadApp {
+    background: #060400;
+}
+
+
+#categoryTab__custom {
+  color:  #ffffff; 
+  /* #3CDCA0; */
+  .icon{
+    color:  #ffffff;  
+    /* #3CDCA0; */
+  }
+ }
+
+.categoryTab{   
+    color:var(--text-brand); 
+     /* #3CDCA0; */
+    .icon{
+      color: var(--text-brand);  
+      /* #3CDCA0; */
+    }
+    &:hover{
+      color: var(--text);   
+      /* #fff; */
+      .icon{
+        color: var(--text-brand);   /* #3CDCA0; */
+      }
+    }
+    &:before{
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+      height: 3px;
+      border-radius: 5px;
+      background: linear-gradient(90deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);/* linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);*/
+      content: "";
+    }
+  }

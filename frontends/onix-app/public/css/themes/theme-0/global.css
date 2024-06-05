@@ -1,0 +1,205 @@
+:root{
+
+    /*body background */
+    /* --bg-color*/
+    --bg: #020316; 
+    --bg-invert : #ffffff;
+
+    /*get from the promotion page*/
+    --bg-2nd: #1B1922; /* lowest contrast */
+    --bg-3rd: #262529;  /* contrast */
+    --bg-4th: #9F9F9F; /* heavy contrast */
+    --bg-invert: #ffffff;
+    
+   
+    /*tooltip*/
+    --shadow:  0 1px 8px rgba(0,0,0,0.3);
+    /*bg-accent can be gradient*/
+    /*color must able put on --bg and --bg-brand*/
+   --bg-accent :  linear-gradient(180deg, #FFC325 0%, #FF9C19 100%);
+   --text-onBgAccent: #000;
+   --bdr-accent : #FFC325;
+
+
+   --bg-brand-blend : #100147; /*blend with --bg*/
+   --bg-brand-blend-invert : #8185DA;
+ 
+   --bg-brand:  #330CAF; /*brand should be darkest to lightest*/
+   --bg-brand-2nd:  #4C16FB; 
+   --bg-brand-contrast:  #715CDB; /*used for gradients and anything that does not have text on it like scroller*/
+   --bg-brand-heavy-contrast :#DED3FF; /*this used for text on bg-brand-**/
+   --text-onBgBrand :#fff;
+
+   /* mobile bottom bar - BottomBar2 */
+   --bg-mobileBottomButton: linear-gradient(180deg, #fff 0%, #9b9b9b 100%);
+   --text-mobileBottomButton: #000;
+   --shadow-mobileBottomMenu: rgba(0,0,0,.9);
+
+
+  /*body text color - goes with the bg  */
+  --text: #ffffff; /*title , head - primary*/
+  --text-2nd:#ffffffc8; /* body text - secondary*/
+  --text-3rd : #8C90C3; /* muted text  - tertiery*/
+  /* #ffffff75; */
+  --text-invert:#000000;  
+  
+  --text-accent: #F0A500;
+  --text-brand: #887aff;
+  /* #8A2BE2; */
+
+     /*Header*/
+    /* --header-bg  */
+    --bg-hdr :var(--bg);
+    /* --topbar-bg */
+    --bg-hdrContent:  linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);
+   
+    /* --topbar-login-text */
+    --text-onHdrContent: var( --bg-brand-heavy-contrast);
+    /* --topbar-login-bg */
+    --bg-hdrTopContent :   linear-gradient(180deg, #7850F9 0%, #4C16FB 100%);
+
+    /* --header-btn-bg */
+    /* --btn-hdr */
+   
+  /*only this --btn bg color must able put on --bg and --bg-brand*/
+  /*some themes use same bg as bg-accent, as primary button can have same accented bg */
+    --btn: linear-gradient(180deg, #FFF 0%, #9B9B9B 100%);   
+    --text-onBtn: #000544;  
+    --bdr-onBtn: none;
+    --shadow-onBtn: none;
+    /* --header-btn-text */
+    /* --text-onbtnhdr: #ffffff; */
+    --btn-2nd : transparent;
+    --text-onBtn2nd: currentColor;
+    --bdr-onBtn2nd: 1px solid currentColor; /* some themes border color may use --bdr-accent*/
+    --shadow-onBtn2nd:none;
+
+    --btn-3rd : transparent;
+    /* --text-onBtn3rd: rgb(255 255 255 / 87%); */
+    --bdr-onBtn3rd: 1px solid rgb(255 255 255 / 40%);
+
+      /*if content__pg is invert color of bg, then neutral need a color that visible on both background*/
+      /* --input-muted-dark-bg */
+      --btn-neutral:#d4d4d4;
+      /* --input-muted-dark-bd-color */
+      --bdr-neutral:#909191;
+ 
+    /* --header-icon-bg */
+    --bg-hdrBtnIcon :#3C15BF;;
+    /* --header-icon-color */
+    --text-onHdrBtnIcon: #A296F4;
+
+    /*--wallet-ref-icon-color */
+    --icon-hdrCta: #18B861;
+
+    --btn-file: #2F3233;
+    --bdr-onBtnFile: #ffffff;
+
+
+      
+    --bg-modal : var(--bg-invert);
+    --text-onModal: var(--text-invert);
+    --bdr-onModal :  #b4b4b4;
+    --bg-onModalContent : transparent;/*bg of input on Modal will use this var*/
+
+    --bg-pgContent : var(--bg-invert);
+    --text-onPgContent : var(--text-invert);
+    --bg-pgContentInner: #F5FAFD;
+    --text-onPgContent-2nd : #545454;
+
+    .content__pg .title__pg{
+      border-color: #545454;
+    }
+    .profile.content__pg {
+      /*due to profile page content__pg on mobile has white page, same like desktop*/
+      --text-input : var(--text-onPgContent-2nd);
+    }
+    .profile .report-item-box{
+      background :linear-gradient(180deg, #E4DCFF 0%, rgba(242, 239, 250, 0) 100%);
+    }
+
+    .profile  .report-summary-box {
+      linear-gradient(180deg, #A3D8FF 0%, #FFFFFF 100%);
+      box-shadow: 0 10px 6px -12px;
+  } 
+    /*input is affected by bg-pgContent*/
+    /* --bg-input */
+    /* --bg-input: */
+    --bg-input : transparent;
+    /* --bdr-input */
+    --bdr-input: #b4b4b4; /* #b4b4b4;  */
+    /* --text-input */
+    /* --text-input : var(--text); */
+    /* --input-muted-hover-bd-color */
+    --bdr-input-hover: #5f2efa;
+    /* --bg-input-disabled */
+    --bg-input-disabled: rgb(199, 199, 199);
+
+    
+/* member level */
+--gold-lvl-bg: linear-gradient(90deg, #DBBE91 0%, rgba(121, 70, 29, 0.95) 100%);
+--gold-lvl-text-color: #ffff00;
+--new-lvl-bg: #ffffff;
+--new-lvl-text-color: #ffffff;
+
+/* member level end*/
+
+
+
+/* profile popup */
+--popup-bg : #0D0D13; 
+--popup-head-bg : #171722;
+--popup-text-accent : #B6A0FB;
+--popup-icon-bg : transparent;
+--popup-info-bg : #5927FB;
+--popup-light-bg : #ffffff;
+--popup-text-dark : #000000;
+--popup-text-light : #ffffff;
+
+--popup-icon-bd-color : transparent;
+--popup-icon-color : #ffffff;
+--popup-icon-light-bg : #EFEBFA;
+--popup-icon-text : #313131;
+--bg-popUpMenu-hover : #EFEBFA;
+/* profile popup end*/
+ 
+
+
+/* checkbox */ 
+--cbx-bg : #ffffff;
+--cbx-color : rgba(95, 46, 250, 1);
+--cbx-bd-color : #ABABAB;
+/* checkbox end*/
+ 
+--toggle-btn-bg: #585858;
+--toggle-btn-bd-color: #858586;
+--toggle-btn-active-bg: #F5FFEE;
+--toggle-btn-color: #ffffff;
+--toggle-btn-active-color: #00FF0A;
+
+
+ 
+/*OLD*/
+
+--logout-btn-bg: #6435FA;
+--logout-btn-color: #ffffff;
+
+      
+
+/*bottom bar*/ 
+--bottom-nav-bg : #fff;
+--bottom-nav-color :   #5E5F60;
+--bottom-nav-color-active :  #de4a03;
+--bottom-popup-icon-bg: radial-gradient(circle, rgb(255 173 29), rgb(122 17 0));  
+--bottom-popup-icon-color :#fff;
+--bottom-popup-icon-color-active : #5E5F60;
+--bottom-center-bg:radial-gradient(circle, rgb(254,187,69), rgb(212,32,3));
+--bottom-center-color:#fff;
+/*bottom bar end*/
+   
+  --bg-scrollbarTrack: var(--bg-brand-blend);
+
+  --bg-scrollbarThumb:var(--bg-brand-blend-invert );
+  --bdr-scrollbarThumb: var(--bg-brand-blend);
+ 
+}

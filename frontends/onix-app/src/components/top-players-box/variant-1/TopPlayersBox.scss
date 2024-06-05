@@ -1,0 +1,33 @@
+.row{
+    // background: #3E4D4A;
+    background:var(--bg-3rd);// rgba(20, 63, 0, 1);
+    color: var(--text);// #fff;
+}
+.imgWrapper{
+    width: 46px;
+    height: 46px; 
+    background:var(--bg);// rgba(0, 0, 0, 1);
+}
+.img{
+    width: 24px;
+    height: 25px;
+}
+.nameText{
+    color: inherit; /*inherit from .row*/
+}
+.amtText{
+    color:var(--text-accent);// #FFCA00;
+}
+@screen sm{
+    .row{
+        height: 31%;
+    }
+    .img{
+        width: 24px;
+        height: 25px;
+    }
+    .imgWrapper{
+        width: 46px;
+        height: 46px;
+    }
+}

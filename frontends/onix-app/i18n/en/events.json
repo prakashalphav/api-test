@@ -1,0 +1,8 @@
+{
+  "events": {
+    "Promotions": "Promotions",
+    "Remaining time":"Remaining time",
+    "Valid for unlimited time": "Valid for unlimited time",
+    "valid": "Valid from {{startDate}} till {{endDate}}"
+  }
+}

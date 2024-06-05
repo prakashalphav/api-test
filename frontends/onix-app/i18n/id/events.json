@@ -1,0 +1,8 @@
+{
+  "events": {
+    "Promotions": "Promosi",
+    "Remaining time":"Waktu yang tersisa",
+    "Valid for unlimited time": "Berlaku untuk waktu yang tidak terbatas",
+    "valid": "Berlaku dari {{startDate}} hingga {{endDate}}"
+  }
+}

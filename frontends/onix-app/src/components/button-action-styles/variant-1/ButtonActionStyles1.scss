@@ -1,0 +1,51 @@
+
+
+
+.cancel-btn{
+    background: var(--muted-btn-bg);
+    color: var(--muted-btn-color);
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.save-btn{
+    background: var(--primary-btn-bg);
+    color: var(--primary-btn-color);
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.apply-btn{
+    background: var(--primary-btn-bg);
+    color: var(--primary-btn-color);
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.apply-btn-v2{
+    background: var(--promo-add-btn-bg);
+    color:var(--promo-add-btn-text-color);
+    &:hover{
+        color : var(--promo-add-btn-hover-text);
+        background: var(--promo-add-btn-hover-bg);
+    }
+}
+
+.apply-btn-v3{
+    background: transparent;
+    border: 1px solid var(--primary-btn-bg);
+    color:  var(--primary-btn-bg);
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.check-btn{
+    background: var(--primary-btn-gradient-bg);
+    color: var(--primary-btn-color);
+    &:hover{
+        opacity: 0.8;
+    }
+}

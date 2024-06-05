@@ -1,0 +1,22 @@
+
+
+
+
+.report-table{
+    tr{
+        border: 2px solid var(--bdr-tr);
+    }
+    thead tr{
+        background: var(--bg-thead);
+        color: var(--text-thead);
+    }
+}
+
+.report-text-accent{
+    color : blue;
+}
+
+
+.report-text-link {
+    color :#007bff;
+}

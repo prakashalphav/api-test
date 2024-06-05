@@ -1,0 +1,161 @@
+
+ 
+  .center-pos {
+    transform: rotate(-30deg);
+    bottom: 0;
+    left: 0;
+  }
+  .icon__bg{
+    font-size:220px;
+
+    @screen lg{
+      font-size:300px;
+    }
+  }
+
+  .content {
+    --speed: 120s;
+    --content-size: 220px;
+    position: relative;
+    border-radius: 50%; 
+    width: var(--content-size);
+    aspect-ratio: 1;
+    animation: orbit var(--speed) linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+      --orbit-play-state: paused;
+    }
+  }
+ 
+  @screen sm {
+    .content {
+      --content-size: 300px;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    li:nth-of-type(#{$i}) {
+      //  animation-delay: calc(0.1  * #{$i}s );
+
+      --degrees: #{$i} * 360deg / 6;
+      --throb-delay: #{250ms * $i};
+    }
+
+    li:nth-of-type(#{$i}) .animate {
+      --animate-delay: #{400ms * ($i  )};
+    }
+
+  }
+
+  li {
+    --size: 50px;
+    --offset: calc(var(--content-size) / 2);
+    border-radius: 50%;
+    width: var(--size);
+    aspect-ratio: 1;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - var(--size) / 2);
+    left: calc(50% - var(--size) / 2);
+    // transform: translate(
+    //   calc(cos(var(--degrees)) * var(--offset)),
+    //   calc(sin(var(--degrees)) * var(--offset))
+    // );
+
+    &:hover {
+      --throb-play-state: paused;
+    }
+  }
+  @screen sm {
+    li {
+      --size: 60px;
+    }
+  }
+  .circle {  
+    background-color: red;
+    color: white;
+    // left:50%;
+    // transform: translate(-50%,-50%);
+
+    position: absolute;
+    animation: orbit var(--speed) linear reverse infinite,
+      throb 1s var(--throb-delay) ease-in-out infinite alternate;
+    animation-play-state: var(--orbit-play-state, running),
+      var(--throb-play-state, running);
+  }
+
+  .email.circle {
+    background: #34a855;
+  }
+
+  .hotline.circle {
+    background: #f24040;
+  }
+
+  .skype.circle {
+    background: #00aff0;
+  }
+
+  .line.circle {
+    background: #00c300;
+  }
+
+  .telegram.circle {
+    background: #0088cc;
+  }
+
+  .phone.circle {
+    background: #cd9900;
+  }
+
+  @keyframes orbit {
+    100% {
+      rotate: 1turn;
+      // transform: rotate(360deg);
+    }
+  }
+
+  @keyframes throb {
+    100% {
+      scale: 1.025;
+      //  transform: scale( 1.025);
+    }
+  }
+
+  li:nth-of-type(1) {
+
+    --degrees: 0deg;
+    transform: translate(calc(1 * var(--offset)),
+        calc(0 * var(--offset)));
+  }
+
+  li:nth-of-type(2) {
+    transform: translate(calc(0.5 * var(--offset)),
+        calc(0.866 * var(--offset)));
+    --degrees: 60deg;
+  }
+
+  li:nth-of-type(3) {
+    transform: translate(calc(-0.5 * var(--offset)),
+        calc(0.866 * var(--offset)));
+    --degrees: 120deg;
+  }
+
+  li:nth-of-type(4) {
+    transform: translate(calc(-1 * var(--offset)),
+        calc(0 * var(--offset)));
+    --degrees: 180deg;
+  }
+
+  li:nth-of-type(5) {
+    transform: translate(calc(-0.5 * var(--offset)),
+        calc(-0.866 * var(--offset)));
+    --degrees: 240deg;
+  }
+
+  li:nth-of-type(6) {
+    transform: translate(calc(0.5 * var(--offset)),
+        calc(-0.866 * var(--offset)));
+  }
+ 

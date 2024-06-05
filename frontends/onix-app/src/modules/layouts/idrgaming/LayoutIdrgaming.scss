@@ -1,0 +1,22 @@
+/* only for idrgaming specific color styles*/
+
+
+.idrgaming .modalContainer{
+    --bg-modal: #383838; 
+    --bg-onModalContent : var(--bg-modal);
+    --text-onModal : #fff;
+    --bdr-onModal : #fff;
+    
+    --text-input: #fff;
+    --bg-input : #141414; 
+    --bdr-input: #141414; 
+
+    --btn: linear-gradient(360deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%);
+    --bdr-onBtn: 6px;
+    --text-onBtn: #000;
+  }
+  
+
+.bottomBarNav{
+  background: var(--bg-brand-2nd);
+}

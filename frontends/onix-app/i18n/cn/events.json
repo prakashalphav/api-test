@@ -1,0 +1,8 @@
+{
+  "events": {
+    "Promotions": "促销活动",
+    "Remaining time":"剩余时间",
+    "Valid for unlimited time": "无限期有效",
+    "valid": "有效期从{{startDate}}至{{endDate}}"
+  }
+}

@@ -1,0 +1,29 @@
+ 
+  
+  .boxInputSearch {
+    background: var(--bg);
+
+    // background: #181818;
+    // color : #E0E0E0;
+  }
+  .providerGames {
+   
+  }
+
+ 
+  .inputSearch { 
+    width: 1em;
+
+    &--expand { 
+      width:  10em;  
+    }
+
+
+    @screen md{
+      width:  20em;
+    }
+ 
+  }
+
+ 
+ 

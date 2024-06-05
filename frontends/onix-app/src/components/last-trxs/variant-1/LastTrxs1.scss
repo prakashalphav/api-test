@@ -1,0 +1,46 @@
+  .lastTrxDivider{
+    background: #1F2D40;
+  }
+  .depositLine:before{
+    position: absolute;
+    bottom: 0;
+    left: 0%; 
+    width: 50%;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);//linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+    content: "";
+    z-index: 1;
+  }
+  .winnerLine:before{
+    position: absolute;
+    bottom: 0;
+    right: 0%; 
+    width:  50%;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);// linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+    content: "";
+    z-index: 1;
+  }
+  .trxText{
+    color:var(--text-3rd);// #778697;
+  }
+  .selectedTrxText{
+    color: var(--text);//#fff;
+  }
+  @screen lg{
+    .selectedTrxText{
+      color:var(--text-3rd);// #778697;
+    }  
+  }
+  
+.depositTrx, .winnerTrx
+{
+    transition: transform 1000ms;
+}
+
+.depositTrx:active, .winnerTrx:active
+{
+    transform: scale(.7);
+}

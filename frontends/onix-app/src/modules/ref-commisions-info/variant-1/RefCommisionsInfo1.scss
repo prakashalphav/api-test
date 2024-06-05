@@ -1,0 +1,24 @@
+
+.refColumn{
+    // color: var(--ref-lvl1-icon-bg);
+    color :var(--text-refColumn);
+}
+.refColumn-secondary{
+    // color: var(--ref-lvl2-icon-bg);
+
+    color :var(--text-refColumn-2nd);
+}
+.refColumn-tertiery{ 
+    color: var(--text-refColumn-3rd);
+}
+.table-row{
+    border-color: var(--bdr-neutral);
+}
+.icon-close{
+    background: var(--icon-refClose);
+}
+.referralBtn{
+    box-shadow: 0px 3px 3px 0px #FFFFFF52 inset;
+    background: #495363;
+    color: #fff;
+}

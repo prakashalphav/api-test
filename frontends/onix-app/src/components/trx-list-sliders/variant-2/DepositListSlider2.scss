@@ -1,0 +1,86 @@
+.depo-slider-2 {
+  
+
+
+  --text-color: #d9d9d9;
+  .box-wrap {
+    border: none; 
+    padding: 1px;
+  }
+
+  .box {
+    background: linear-gradient(0deg, #08032B, #08032B), linear-gradient(180deg, #1C1344 0%, rgba(28, 19, 68, 0) 100%);
+    background-clip: border-box;
+    color: #ffffff;
+  }
+
+  .date {
+    color: #aba7ba;
+  }
+  .amt {
+    background: linear-gradient(90deg, #f7d2a0 0%, #cf8429 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  
+ 
+  .gold-coins{
+    width: 81px;
+    height: 93px;
+    perspective: 7533px;
+  }
+
+ 
+  .gold-coins svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+  }
+
+ 
+  .gold-coins .gold {
+    transform: rotateY(180deg); /*flip to hide*/
+  }
+  .slide__content{
+    transition: transform 400ms linear ;
+    transform-origin: bottom;
+    will-change: transform;
+  }
+  .splide__slide.is-active {
+   
+    .gold-coins .dull {
+      transform: rotateY(180deg);
+    } /*flip to hide*/
+ 
+    .gold-coins .gold {
+      transform: rotateY(0deg);
+    } /*flip to show*/
+
+ 
+
+    .box-wrap { 
+      background-clip: border-box;
+      background: linear-gradient(180deg, #ffc503 0%, rgba(121, 70, 29, 0) 100%);
+      padding: 1px;
+    }
+  }
+
+  @screen sm {
+    .splide__slide {
+      padding-top: 50px;
+    }
+  
+    .splide__slide.is-active {
+      .slide__content{
+        transform: scale(1.2);
+    } 
+    }
+  }
+}

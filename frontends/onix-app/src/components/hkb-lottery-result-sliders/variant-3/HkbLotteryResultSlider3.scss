@@ -1,0 +1,24 @@
+
+  /*define colors in the module level only*/
+  .content{
+    color: var(--text-onBgBrand);
+    background: var(--bg-brand-blend);// #171717;
+  } 
+.info-content{
+  color: var( --text-3rd); //#787878
+}
+.gradientTitle{
+  background: var(--bg-accent);//linear-gradient(0deg, #FFDE3B, #FFDE3B),radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%),radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradientTitle1{
+  background: linear-gradient( 45deg, var(--text),var(--text-2nd));
+   //linear-gradient(0deg, #FFFFFF, #FFFFFF),   radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%),  radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

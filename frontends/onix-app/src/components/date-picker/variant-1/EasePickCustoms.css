@@ -1,0 +1,17 @@
+ 
+ 
+ /* @media (min-width: theme('screens.md'))*/
+ @media (min-width: 768px) {
+  :host {
+    right: 0;
+  }
+  .container.show {
+    right: 0;
+    left: auto!important;
+  }
+}
+/*to use  .css only until below issue fixed
+https://github.com/vitejs/vite/issues/2522 
+
+*/
+ 

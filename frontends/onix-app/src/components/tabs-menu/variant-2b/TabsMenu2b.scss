@@ -1,0 +1,12 @@
+
+ .tabsWrapper{
+   border-color: transparent;
+ }
+
+ .tabItem{
+   color : var(--text-3rd) ;// var(--tabmenu2-text-color);
+   &.active {
+      border-bottom: 3px solid currentColor;  
+      color :var(--text) ;// var(--tabmenu2-active-text-color);
+   }
+ }

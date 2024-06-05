@@ -1,0 +1,27 @@
+.slider-variant-2{
+  // max-height: 320px;
+   min-height:180px;
+  @screen md{
+    // min-height:350px;
+    // max-height: 450px;
+  }
+
+  // @screen lg{
+  //   height: 450px;
+  // }
+  &.spicr-slider .item {
+    // max-height: 320px;
+    min-height:180px;
+    height:auto;
+    @screen md{
+      // min-height:350px;
+      // max-height: 450px;
+      height:auto;
+    }
+  
+    // @screen lg{
+    //   height: 500px;
+    // }
+  }
+}
+

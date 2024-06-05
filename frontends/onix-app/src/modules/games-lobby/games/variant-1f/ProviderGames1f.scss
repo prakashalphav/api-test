@@ -1,0 +1,97 @@
+.boxInputSearch {
+  background: transparent;
+  width: auto;
+  border-radius: 25px;
+
+  @screen sm {
+    width: 50%;
+  }
+}
+
+.providerGames {
+  /* --bg-labelHot */
+  --bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+  /* --text-onLabelHot */
+  --text-onLabelHot: #ffffff;
+  /* --bg-labelNew */
+  --bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+  --text-onLabelNew: #ffffff;
+  /* --text-onLabelNew */
+  border-top: 1px solid #E06E00;
+  margin-top: 25px;
+
+  @screen sm {
+    margin-top: 0;
+  }
+}
+
+ 
+.inputSearch { 
+  width: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  height: 27px;
+  border-radius: 25px;
+  padding-left: 10px;
+  font-size: 10px;
+
+  @screen md{
+    width: 100%;
+  }
+
+  @screen sm {
+    font-size: 14px;
+    height: 50px;
+  }
+
+  &--expand { 
+    // position: absolute;
+    // right: 0;
+    width: 100%;
+    transition: width 0.3s;
+    // z-index: 20;
+  }
+
+}
+
+.btnSearch {
+  width: 45px; 
+  height: 27px;
+  border: 1px solid #FFF;
+  background: linear-gradient(0deg, #FF800B 15.83%, #FFB92A 124.07%);
+  color: #FFF;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  right: 0;
+
+  svg {
+    display: block;
+    margin: auto;
+    width: 17px;
+    height: 17px;
+
+    @screen sm {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @screen sm {
+    width: 130px;
+    height: 50px;
+  }
+}
+
+.selectedMenuTitle {
+  color: #FFF;
+
+  svg {
+    width: 15px;
+    height: 10px;
+
+    @screen sm {
+      width: 40px;
+      height: 28px;
+    }
+  }
+}

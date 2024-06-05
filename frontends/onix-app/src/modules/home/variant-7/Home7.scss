@@ -1,0 +1,36 @@
+ 
+#topWinnersTitle{
+  background: linear-gradient(0deg, #FFDE3B, #FFDE3B),
+  radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.59) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%),
+  radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%); // SL - this color hardcoded as to match the CrownGoldIcon 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.advantages{
+  background: var(--bg-2nd); // #161616;
+  
+}
+.advantagesText{
+  color:  var(--text-accent); //#DBAB57;
+}
+.advantagesTitle{
+  color: var(--text); //#ffffff;
+}
+.contactInfoText{
+  color: var(--text-2nd); // #979797;
+}
+.advantagesIcon{ 
+  width: 70px;
+  height: 70px;
+  background: var(--bg);
+}
+.contactInfoIcon{ 
+  background: var(--bg-2nd);
+  color: var(--text-accent);
+}
+
+.announcementSection{
+  background: var(--bg-2nd);// #171717;
+}

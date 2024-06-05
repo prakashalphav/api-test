@@ -1,0 +1,40 @@
+- color-background
+   --color-bg
+ 
+   //color roles 
+   --color-bg-brand
+   --color-bg-brand-hover
+        --color-text-brand
+        
+   --color-bg-success
+   --color-bg-warning
+        --color-text-warning
+   --color-bg-danger
+   --color-bg-disabled
+
+
+- color-foreground  
+  --color-border
+  --color-icon
+  --color-text
+  
+
+  Type(bg, text) |Color Role (brand, warning)| prominence (base on the hierary heading is none, secondary is Body,  terteiry is Label) | hover
+
+  
+
+  https://www.youtube.com/watch?v=1DTnojio89Y
+  https://prnt.sc/aAn7hlesDNPn
+
+
+  1. ask yourself what role does this color do ? think of the context(semantic) 
+  is it bg-header-contrast or bg-heavy-contrast
+  consider the function of the color
+
+
+
+
+
+
+    /*TODO this shud take from text-brand for all themes*/
+    --popup-text-accent :var( --text-brand);

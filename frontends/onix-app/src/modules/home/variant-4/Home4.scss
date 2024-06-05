@@ -1,0 +1,65 @@
+// .title{
+//     background: linear-gradient(90deg, #F7D2A0 0%, #CF8429 100%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     background-clip: text;
+//     text-fill-color: transparent;
+    
+//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// }
+
+.fade-in-bottom {
+    --fade-in-translateY : 20px; 
+    --animate-delay :1s;
+}
+.contacts-container .fade-in-bottom {
+    --fade-in-translateY : 150px; 
+    --animate-delay :1s;
+    --animate-duration :2s;
+ }
+ 
+  h2.animate{
+    --animate-delay: 0.5s;
+    --slide-in-translateY: 20px; 
+  }
+.grid-games.animate {
+    --animate-delay: 2s;
+}
+
+.slide-in-br.animate ,.slide-in-tl.animate {
+  --animate-delay: 0.5s; 
+  --animate-duration: 2s;
+}
+
+.trxs .title.animate {
+  --animate-delay: 2s; 
+}
+
+.trxs-slider.animate {
+    --animate-delay: 3s;
+    --fade-in-translateY : 100px; 
+}
+
+ 
+.marqueeAnn{
+  // color:var(--text-onBgBrand);
+  // background: linear-gradient(180deg, transparent, var(--bg-brand-2nd) 100%);
+}
+.section-title{
+  background:  linear-gradient(90deg, var(--bg-2nd) 0%, var(--bg)  100%);// linear-gradient(90deg, #121212 0%, rgba(0, 0, 0, 0.00) 100%);
+
+  color: var(--text);//#fff
+}
+.apkdownloadWrapper{
+  max-width: 425px;
+}
+@screen md {
+  .gameBanners{
+    flex-basis: 50%;
+  }
+}
+@screen lg{
+  .apkdownloadWrapper{
+    width: 31%;
+  }
+}

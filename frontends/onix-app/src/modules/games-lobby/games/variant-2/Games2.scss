@@ -1,0 +1,28 @@
+
+.box-wrapper{
+    background: var(--bg-lobbyGame);
+    color : var(--text-onLobbyGame);
+}
+
+.hot-label{
+  background: var(--bg-labelHot);
+  color: var(--text-onLabelHot);
+}
+
+.new-label{
+    background: var(--bg-labelNew);  
+    color: var(--text-onLabelNew);
+}
+.img-wrapper {
+  .overlay {
+    background: var(--bg-imgOverlay);  
+  }
+}
+
+ 
+// .name{
+//   color:white;
+//   @screen sm {
+//     color : black;
+//   }
+// }

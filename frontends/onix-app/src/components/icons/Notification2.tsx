@@ -1,0 +1,11 @@
+export const NotificationIcon = () => (
+<svg width="1em" height="1em" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="28" height="28" fill="url(#pattern0_notification)"/>
+<defs>
+<pattern id="pattern0_notification" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_93_14663" transform="scale(0.0104167)"/>
+</pattern>
+<image id="image0_93_14663" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEX0lEQVR4nO2dTW8bVRSGnw0UxOcKqCr+AGXHnm8EfyAIsUSIFbQCISHxC9gUUVEkukECiQWbsuiH1CZzLcdJSKVA4ubTjoMouwooST3XaeyOTzVRq6qFpHZi+1zPnEd6JStjW2eek3PtTKxrMAzDMIwhQaockBpHkhrTSY34VqZllY/SY9r1ZRqpcChZZa5dQ/4vSY3Z9D7adWYSqXIgqTLXriK7Jakya5PQjwZUONKuIJ1EKnzYjxpyTbLMxfYK0kmSFX7RrjdzyBJ1WUI6TF273swhi0g30a43c8gC0k20680Mcp5H4gJvNS8iW5PI5jjSKCKNAuJvJb2d/iw9lt6nOY3EjjfTx2rXP5TERQ42HJ/EERNxRNM7ZC9JHxtHlHzEx3GBZ7TPK3jqY7ziHWdjx429St+lGS0fcabheEn7PIOjXuD12DHZa+m7NGMibTZ5Jy5y0Dt+GJT4/yTidKPIs+SRRoF3vGNDTf6drDciRsgLUuChOOLbAMTLPcvSN3Iu41dTpcCj3nFBW7bfeUkqXB3lCbJI/TxP+YhZdcnuvk34La2VLPH3OR73jl/V5bqOm3Dp3wJPkpU1Px1tdamu60SZeE3wjpMByJS9JI44wTDTiHhbW6LfZ+oR7zKM+DEOBfI+X/aZ9fQPRoaN2PFTAPKkR/mRYbu2E4A06WXqBV5mWEgvdmkL8z1O7JhiiC4pSxbTiHiR0Emv52uL8v1KxGlCpj7G09v/+NAW5fqT9NzScyRU4ohPtSX5/ucooZLFF19/7xQ4igT76QXHVg4asBXkpy3Sj4Foy/EDSn2MNwiN2PG5thg/uCn4jNDwju+1xfjB5TtCI46YztEETBEaseOPHDVgjdDwjn+0xfhBJeIvQiMPb0H9nQm4TmhoS/EDDqGhLcRbA/SleJsAfTHelqB8hNDQFuKtAfpSvE2AvhhvS1A+QmhoC/HWAH0p3iZAX4y3JSgfITS0hXhrgL4UbxOgL8bbEpSPEBraQrw1QF+KtwnQF+NtCcpHCA1tId4aoC/F2wToi/G2BOUjhIa2EJ/HBsifPCy/M5KsMdFeQ/KUZI0ZqfGBLPPY4MWvcjhZ5Ytklas77eWflyQ1riU1TkqNF/r/277KSFJl9H57+Oc1SYUZqfRhKmSZo8kKG53u35/3JCtspN930Bv5K7zf6b79Fu5yIMu8t/8GLLLcxb79lqW7HCz2ogH1bvfut3Dbwf6/SEIWmOp2734Ltx1M7L8BZV6TMm25hFjo3EGZROZ7tEG4zPGqzDEpc2xKefvJLeUdHTSkzITMZmR39sunuHb5Z2RPOcWGdv1Dz5UzLF45i+wx89r1Dz3ro3y1PorsKRc4pl3/0LNV4PnNIjeuF5Fusv2YcZ7Trj8TtMY50SohXea4dt2ZQRZ4sFlirFP5zRKjMsMD2nVnrgmtcb5ulrixi/j02HGT30e2ShxulfiyNc58s0Q9TXq7VeKYrfmGYRiGYRiGYRiGQeDcBFvzI2RE/hDJAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+);

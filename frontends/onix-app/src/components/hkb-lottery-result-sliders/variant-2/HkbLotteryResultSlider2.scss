@@ -1,0 +1,51 @@
+/*define colors in the module level only*/
+.content{
+  border: var(--bdr-onListItem);
+  background: var(--bg-listItem);
+}
+// #hkbLotteryResultSlider2
+.innerWrapper{
+//  background: radial-gradient(50% 50% at 50% 50%, #01BA01 0%, #028402 49.75%, #013701 100%);
+
+  background: radial-gradient(50% 50% at 50% 50%, var(--bg-brand-blend)  0%, var(--bg-brand) 49.75%, var(--bg-brand-2nd) 100%);
+}
+.sliderItem{
+  //background: #002800;
+  background: var(--bg-brand-blend);
+  color: var(--text);
+}
+.amountText{
+ // color: rgba(221, 242, 5, 1);
+  color:var(--text-accent);
+}
+ 
+.splide__arrow{
+  // color: #ffcc14;
+  // background:rgba(33, 33, 33, 1);
+  color:var(--text-accent);
+  background: var(--bg-3rd); 
+  width: 30px;
+  height: 30px;
+  transition: transform .3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+#hkbLotteryResultSlider2{
+  top: -40px;
+  margin-bottom: -40px;
+}
+@screen sm{
+  #hkbLotteryResultSlider2{
+    margin-top: -58px;
+    top: 0;
+    margin-bottom: 0;
+  }
+  .splide__arrow{
+    width: 40px;
+    height: 40px;
+  }
+}

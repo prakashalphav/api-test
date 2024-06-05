@@ -1,0 +1,118 @@
+:root{
+
+       /* NEW */
+
+/* referral */
+/* --ref-close-icon-bg */
+--icon-refClose: #02c793;
+/* --ref-lvl1-icon-bg  */
+--text-refColumn: #8f96a1;
+/* --ref-lvl2-icon-bg: #8263ff; */
+--text-refColumn-2nd: #8263ff; 
+/* --ref-lvl2-icon-color: #c9bdff; */
+--text-refColumn-3rd: #c9bdff;
+/*   
+/* referral end*/
+
+
+--bg-lobbyGame: var(--bg-2nd);
+--bdr-onLobbyGame: var(--text-brand);
+--text-onLobbyGame: var(--text);
+--bg-imgOverlay:  radial-gradient(100% 171.19% at 100% 36.03%, #001200 0%, rgba(0, 0, 0, 0.67) 100%);
+/* Lobby Game Listing end*/
+ 
+/* --bg-labelHot */
+--bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+/* --text-onLabelHot */
+--text-onLabelHot: #ffffff;
+/* --bg-labelNew */
+--bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+--text-onLabelNew: #ffffff;
+/* --text-onLabelNew */
+
+/* GameListing end*/
+
+
+/* deposit */
+--bg-payopt: #343434;
+--text-onPayopt: #f5f5f5;
+--bg-payopt-active: linear-gradient(180deg, #DD302F 0%, rgba(170, 136, 190, 0) 100%);
+--text-onPayOpt-active: #ffffff;
+--bdr-onPayOpt-active: transparent;
+--bg-payOptFlag: rgba(128, 152, 146, 1);
+--bg-payOptFlag-active: rgba(0, 166, 126, 1);
+--text-onPayOptFlag: #ffffff;
+--bg-payOptMethod: #241C3C;
+--bg-payDetail: radial-gradient(95.32% 133.16% at 50% -20%, #BE3030 0%, #460404 50.91%, rgba(70, 4, 4, 0) 100%);
+--bg-appyPromo: #bff5de;
+--text-onAppyPromo: #000000; 
+--bg-bonusEvt: #bff5de;
+--bdr-onBonusEvt: #156f4a;
+--bg-eventDesc: #777777;
+--text-onEventDesc: #ffffff;
+/* deposit end*/
+
+/* profile */ 
+/* --profile-container-bg: #2f2b34;
+--profile-container-text : #ffffff;
+--profile-muted-bg: #F2EFFA;
+--field-text-color :#FFFFFF;
+
+--note-bg: linear-gradient(180deg, #212020 0%, #010214 95.83%, #1C1C1E 100%);
+--note-text-color: #ffffff; */
+/* profile */
+--profile-container-bg: var(--bg-3rd); 
+/* #2a2329; */
+--profile-container-text : var(--text);
+/* --profile-muted-bg: #F2EFFA; */
+--profile-muted-bg:  var(--bg-5th);
+--field-text-color :var(--text);
+
+/* --note-bg: #111111; */
+--note-bg: var(bg-3rd) ;
+ /* #2a2329; */
+--note-text-color:  var(--text);
+/* profile end*/
+--text-muted :var(--text-3rd); 
+/* deposit end*/
+
+ 
+/* table */
+--pagination-item-color: #dddddd;
+--pagination-item-bg: #292929;
+--pagination-item-hover-bg: #111111;
+--bdr-tr: var(--bdr-neutral);
+/* --tbl-row-muted-bg: #c5c5c5; */
+/* --tbl-row-dark-bg */
+--bg-thead: var(--bg-3rd);
+--text-thead: var(--text-2nd);
+/* --tbl-row-light-text: 
+#ffffff; */
+/* --tbl-muted-dark-text */
+--text-thMuted: var(--bdr-neutral);
+/* table end*/
+
+
+/* member level */
+--memberlvl-icon-bg: linear-gradient(to right, #DBBE91, #79461D);
+--memberlvl-new-bg: #ffffff;
+--memberlvl-label-color: #BAB6B6;
+--memberlvl-value-color: #C5B7B7;
+--memberlvl-desc-bg: radial-gradient(100% 100% at 49.95% 0%, #2A365F 0%, #141427 43.92%, #00011D 100%);
+--memberlvl-desc-inner-bg: #0B0C30;
+--memberlvl-desc-bg2: #FFA800;
+/* member level end*/
+ 
+/* memo */
+--memo-bg: #0c0c0c;
+--memo-bd-color: #4a4a4a;
+--memo-del-btn-bg: #F4F4F4;
+--memo-del-btn-bd-color: #B1B6B6;
+--memo-text-light: #808080;
+--memo-text-dark: #eaeaea;
+--memo-text-darker: #cfcfcf;
+/* memo end*/
+  
+ /*OLD*/
+
+}

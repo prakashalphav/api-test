@@ -1,0 +1,25 @@
+.boxInputSearch { 
+    background: var(--bg-2nd);
+    color: var(--text);
+    width: 159px; 
+    transition: transform .5s;
+    @screen sm{
+      width: 236px;
+    }
+    .inputSearchIcon{
+      border-radius: 50px; 
+      background: var(--btn);
+      color: var(--text-onBtn);
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 50px; 
+      @screen md{
+        width: 100px;
+      }
+    }
+    &:hover{
+      transform: scale(1.1);
+      margin-right: 10px;
+    }
+}

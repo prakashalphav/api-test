@@ -1,0 +1,14 @@
+
+
+.card__promoItem .content{
+
+  background: var(--bg-3rd);
+    color:var(--text-2nd);
+}
+.modalContent{
+  ol, ul{
+    list-style: auto;
+    margin: revert;
+    padding: revert;
+  }
+}

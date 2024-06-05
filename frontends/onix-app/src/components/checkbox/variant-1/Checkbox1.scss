@@ -1,0 +1,54 @@
+
+
+.outer-circle{
+    border: 1px solid var(--cbx-bd-color);
+    background: transparent;
+    transform: scale(1);
+    transition: all .2s ease;
+    &:hover{
+        border-color:var(--cbx-color);
+    }
+    //wave effect
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--cbx-color);
+        display: block;
+        transform: scale(0);
+        opacity: 1;
+        border-radius: 50%;
+        transform-origin: center;
+    }
+} 
+.inner-circle{  
+    transition-property: transform, background-color, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.3;
+    transition-delay: .1s;
+    opacity: 0; 
+}
+.inp-cbx:checked + .cbx .outer-circle { 
+    border-color: var(--cbx-color);
+    animation: wave 0.4s ease; 
+    &:before{
+        transform: scale(3.5);
+        opacity: 0;
+        transition: all .6s ease;   
+    }
+}
+
+
+.inp-cbx:checked + .cbx .inner-circle { 
+    background-color: var(--cbx-color);
+    opacity: 1; 
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}

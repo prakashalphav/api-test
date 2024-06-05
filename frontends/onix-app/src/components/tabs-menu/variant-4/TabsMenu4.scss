@@ -1,0 +1,16 @@
+
+.box-wrap{
+    border: none; 
+    background-clip: border-box;
+    background: var(--trx-title-bd-color);
+    padding:1px;
+}
+
+.box {
+    background: var(--trx-title-box-bg); 
+    background-clip: border-box;
+    color: var(--text-color); 
+    .active-tab{
+        background: var(--trx-title-active-bg);
+    }
+}

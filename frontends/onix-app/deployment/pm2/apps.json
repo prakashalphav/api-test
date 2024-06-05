@@ -1,0 +1,16 @@
+{
+    "apps": [
+      {
+        "name": "stgonixv2",
+        "exec_mode": "fork_mode",
+        "script": "../../server/entry.express",
+        "env": {
+          "PORT": 8096,
+          "NODE_ENV": "staging" 
+        },
+        "error_file": "/var/log/pm2/stgonixv2.err.log",
+        "out_file": "/var/log/pm2/stgonixv2.out.log"
+      }
+    ]
+  }
+  

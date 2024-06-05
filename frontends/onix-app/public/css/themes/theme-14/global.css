@@ -1,0 +1,203 @@
+:root{
+    /*body background */
+      /* --bg-color*/
+      /* --bg : */
+      --bg:#30070C;
+     
+      --bg-invert : #EEE;
+      /*get from the promotion page*/
+      --bg-2nd: #1F0205;       /* lowest contrast */
+      --bg-3rd: #510003;  /* contrast */
+      --bg-4th: #000000; /* heavy contrast */
+     
+      --bg-invert: #ffffff;
+       
+      /*tooltip*/
+      --shadow:  0 1px 8px rgba(0,0,0,0.3);
+     /*bg-accent can be gradient*/
+    /*color must able put on --bg and --bg-brand*/
+   --bg-accent :  linear-gradient(180deg, #FFC325 0%, #FF9C19 100%);
+   --text-onBgAccent: #000;
+   --bdr-accent : #FFC325;
+
+
+   --bg-brand-blend : #510004; /*blend with --bg*/
+   --bg-brand-blend-invert : #FBB200 ;
+ 
+   --bg-brand:  #510004; /*brand should be darkest to lightest*/
+   --bg-brand-2nd: rgba(167, 24, 32); 
+   --bg-brand-contrast:   rgb(191, 59, 66) ; /*used for gradients and anything that does not have text on it like scroller*/
+   --bg-brand-heavy-contrast :#DED3FF; /*this used for text on bg-brand-**/
+   --text-onBgBrand :#fff;
+ 
+      /* mobile bottom bar - BottomBar2 */
+      --bg-mobileBottomButton: linear-gradient(180deg, #fff 0%, #9b9b9b 100%);
+      --text-mobileBottomButton: #000;
+      --shadow-mobileBottomMenu: rgba(0,0,0,.9);
+      
+      /*body text color*/
+      --text: #ffffff;
+      --text-2nd:#ffffffc8;
+      --text-3rd:#ffffff75;
+      --text-invert:#000000;
+      /* --text-2nd:70% opacity
+      --text-3rd:50% opacity */
+      --text-accent: #7850F9   ;
+      --text-brand: #EC821C;
+      /*Header*/
+      /* --header-bg  */
+      --bg-hdr:var(--bg);
+      /* --topbar-bg */
+      --bg-hdrContent:   linear-gradient(180deg, #fba911 0%, #e2660e 100%);
+      /* --topbar-login-text */
+      --text-onHdrContent: #6B0410;
+      /* --topbar-login-bg */
+      --bg-hdrTopContent :  linear-gradient(180deg, #FCE066 0%, #fba911 100%);
+   
+      /* --header-btn-bg */
+      /* --btn-hdr */
+      
+  /*only this --btn bg color must able put on --bg and --bg-brand*/
+  /*some themes use same bg as bg-accent, as primary button can have same accented bg */
+    --btn: linear-gradient(180deg, #FCE066 0%, #EC821C 100%);   
+    --text-onBtn: #0D0D0D;  
+    --bdr-onBtn: none;
+    --shadow-onBtn: none;
+    /* --header-btn-text */
+    /* --text-onbtnhdr: #ffffff; */
+    --btn-2nd : transparent;
+    --text-onBtn2nd: currentColor;
+    --bdr-onBtn2nd: 1px solid currentColor; /* some themes border color may use --bdr-accent*/
+    --shadow-onBtn2nd:none;
+
+
+      --btn-3rd : transparent;
+      --text-onBtn3rd: rgb(255 255 255 / 87%);
+      --bdr-onBtn3rd: 1px solid rgb(255 255 255 / 40%);
+  
+
+      /*if content__pg is invert color of bg, then neutral need a color that visible on both background*/
+      /* --input-muted-dark-bg */
+      --btn-neutral:#d4d4d4;
+      /* --input-muted-dark-bd-color */
+      --bdr-neutral:#909191;
+  
+      /* --header-icon-bg */
+      --bg-hdrBtnIcon :#E07D0A;
+      /* --header-icon-color */
+      --text-onHdrBtnIcon: var(--text);
+  
+      /*--wallet-ref-icon-color */
+      --icon-hdrCta:  var(--text-onHdrContent);
+  
+      --btn-file: #2F3233;
+      --bdr-onBtnFile: #ffffff;
+  
+      --bg-modal : var(--bg-invert);
+      --text-onModal: var(--text-invert);
+      --bdr-onModal :  #b4b4b4;
+      --bg-onModalContent : transparent;/*bg of input on Modal will use this var*/
+  
+      --bg-pgContent :var(--bg-2nd);
+      --text-onPgContent : var(--text);
+      --text-onPgContent-2nd : var(--text-2nd); 
+      --bg-pgContentInner :var(--bg-3rd);
+      /*input is affected by bg-pgContent*/
+      /* --bg-input */
+      /* --bg-input: */
+      --bg-input : #D9D9D9; 
+      /* --bdr-input */
+      --bdr-input: var(--bdr-neutral);/* #b4b4b4;  */
+      /* --text-input */
+      --text-input :var(--text-invert);
+      /* --input-muted-hover-bd-color */
+      --bdr-input-hover: var(--text-brand);
+      /* --bg-input-disabled */
+      --bg-input-disabled: #252525;/*disabled input will opacity 0.6*/
+  
+       
+  
+  /* member level */
+  --gold-lvl-bg: linear-gradient(90deg, #DBBE91 0%, rgba(121, 70, 29, 0.95) 100%);
+  --gold-lvl-text-color: #ffff00;
+  --new-lvl-bg: #ffffff;
+  --new-lvl-text-color: #ffffff;
+  /* member level end*/
+  
+      
+  /* profile popup */
+  --popup-bg : #30070C;
+  --popup-head-bg : #371E06;
+  --popup-text-accent : #62161F;
+  --popup-icon-bg : #60000B;
+  --popup-info-bg :linear-gradient(180deg, #4E2701 0%, rgba(78, 39, 1, 0) 86.98%, rgba(78, 39, 1, 0) 100%);
+  --popup-light-bg : #ffffff;
+  --popup-text-dark : #000000;
+  --popup-text-light : #ffffff;
+ 
+  --popup-icon-bd-color : transparent;
+  --popup-icon-color : #FCE066;
+  --popup-icon-light-bg : #fbd2a3;
+  --popup-icon-text : #313131;
+  --bg-popUpMenu-hover : #f9e2c5;
+  /* --sidenav-menu-text: #10EAF0; */
+ 
+  /* checkbox */ 
+  --cbx-bg : #ffffff;
+  --cbx-color : var(--text-brand);
+  --cbx-bd-color : #ABABAB; /* #000000; */
+  /* checkbox end*/
+   
+  --toggle-btn-bg: #585858;
+  --toggle-btn-bd-color: #858586;
+  --toggle-btn-active-bg: #F5FFEE;
+  --toggle-btn-color: #ffffff;
+  --toggle-btn-active-color: #00FF0A;
+   
+ 
+    /*bottom bar*/ 
+    --bottom-nav-bg : #fff;
+    --bottom-nav-color :   #5E5F60;
+    --bottom-nav-color-active :  #EC821C;
+    --bottom-popup-icon-bg: radial-gradient(circle,#EC821C, rgb(122 17 0)); 
+    --bottom-popup-icon-color :#fff;
+    --bottom-popup-icon-color-active : #5E5F60;
+    --bottom-center-bg:radial-gradient(circle, #F7D2A0,#EC821C);
+    --bottom-center-color:#fff;
+    /*bottom bar end*/
+
+    
+  --bg-scrollbarTrack: var(--bg-brand-blend);
+
+  --bg-scrollbarThumb:var(--bg-brand-blend-invert );
+  --bdr-scrollbarThumb: var(--bg-brand-blend);
+   /*OLD*/
+   
+    
+}
+.headerMainNav, .bottomBar{
+  --text-onBgBrand : #000;
+  --bg-brand-2nd: #EC821C  ;
+  --bg-brand-contrast :#FCE066;
+  
+  --btn: #4C16FB ;   
+  --text-onBtn: #FFF;  
+  /* background: linear-gradient(180deg, #ECB602 55.36%, #FFD524 100%); */
+}
+
+.idrgaming .headerMainNav,.idrgaming  .bottomBar ,.idrgaming  .headerWrapper{
+  --text-onBgBrand : #ffffff;
+  --bg-brand-2nd: rgba(167, 24, 32); 
+  --bg-brand-contrast:   rgb(191, 59, 66) ;
+  }
+
+
+
+/*becaise bg-input is light color and the pg background is black, hence this bg must be more opaque*/
+.input__inner_is-error{ 
+    background: rgb(255 202 214 / 70%)!important
+  }
+  .input__inner_is-successful { 
+    background: rgb(180 255 180 / 70%)!important
+  }
+  

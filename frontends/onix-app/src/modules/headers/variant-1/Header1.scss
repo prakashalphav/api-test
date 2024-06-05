@@ -1,0 +1,89 @@
+
+ 
+
+  // --fade-in-translateY : 20px; 
+  // --animate-delay : 0.5s;
+
+  .header { 
+    background: var(--bg-hdr);  
+    color: var(--text-onHdr); 
+  }
+.surfaceTop{
+  background: inherit;
+   &.fixed { 
+ 
+    height: 64px;
+    @media (max-width: theme('screens.md')) {
+      height: 55px;
+    }
+    /* backface-visibility: hidden;
+    transition: background 0.5s linear 0s;
+    background: rgba(255, 255, 255, 0.1); */
+    
+  } 
+} 
+  
+.contentInner{
+  background: var(--bg-hdrContent); 
+  color:var(--text-onHdrContent)
+}
+    
+.blkPadding{
+  border-bottom: 64px solid transparent;
+  @media (max-width: theme('screens.md')) {
+    border-bottom: 55px solid transparent;
+  }
+}
+
+
+.triangle{
+  width: 0;
+  height: 0;
+    
+  border-top: 34px solid var(--bg-hdr);
+  border-left: 20px solid var(--bg-hdr);
+  border-right: 24px solid transparent;
+  border-bottom: 30px solid transparent;
+  @media (max-width: theme('screens.md')) {
+    /* border-top-width:27.5;
+    border-bottom-width:27.5;  */
+    border-top: 27.5px solid var(--bg-hdr);
+    border-bottom: 27.5px solid transparent;
+  }
+} 
+
+
+ 
+
+
+
+
+.content{
+  background: var(--bg-hdrContent);  
+  color: var(--text-onHdrContent); 
+}
+
+.contentTop{
+  background: var(--bg-hdrTopContent); 
+}
+
+
+/*for Register , it is primary because it is most prominent */
+
+
+/*for Login , it is secondary because it is less prominent */
+
+
+.walletIcon {
+  background: var(--bg-hdrBtnIcon);
+  color:var(--text-onHdrBtnIcon); 
+} 
+
+
+/*call-to-action icon*/
+.iconAction{
+  color: var(--icon-hdrCta);
+}
+
+
+ 

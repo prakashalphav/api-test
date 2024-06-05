@@ -1,0 +1,13 @@
+/* //css modules - to solve below issue : 
+
+// useScopedStyles$ on class names not working when pass the classes  into a component - solution is use useStyles$(this has no scoping) or css Modules ( this has scoping, hence why this is used) 
+//<Modal  class ="promo-modal" > */
+
+.promo-modal {
+ background : #1B1922;
+ color :white;
+} 
+
+.promo-modal-close { 
+    color :white;
+   } 

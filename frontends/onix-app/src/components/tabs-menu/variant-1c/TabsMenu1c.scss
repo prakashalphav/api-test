@@ -1,0 +1,17 @@
+.tabsMenu{
+ 
+    color: var( --text); 
+    background: var(--bg-3rd);//rgba(34, 34, 34, 1);
+}
+
+.tabItem{
+    background: var(--bg-2nd);// rgba(17, 17, 17, 1);
+    color: var(--text); //#fff; 
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  
+    &.active , &:hover{
+         border-color: transparent;
+         background:var(--btn);
+         color: var(--text-onBtn); 
+    }
+}

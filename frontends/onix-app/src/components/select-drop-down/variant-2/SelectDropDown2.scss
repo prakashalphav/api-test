@@ -1,0 +1,48 @@
+
+.select__inner {
+  $select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  border: 1px solid var(--bdr-input);
+  transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  background : var(--bg-input);
+  background-image:   $select-bg-img;
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  appearance:none;
+  color: var(--text-input);
+}
+ 
+option{
+  /*this has to be hardcoded as the select is native*/
+  background: white;
+  color: black;;
+}
+ 
+.select__inner_disabled {
+    border: 1px solid var(--bg-input-disabled);
+    background: var(--bg-input-disabled);
+}
+
+.select--md {
+    font-size: 14px;
+    .select__inner {
+      height: 50px;
+      border-radius: 4px;
+      padding: 0 13px;
+      padding: 0 2.25rem 0 13px;
+    }
+  }
+
+  .select__inner:focus-within:not(.select__inner_disabled):not(
+    .select__inner_is-error
+  ):not(.select__inner_readonly):not(.select__inner_is-successful),
+.select__inner:focus:not(.select__inner_disabled):not(.select__inner_is-error):not(
+    .select__inner_readonly
+  ):not(.select__inner_is-successful),
+.select__inner:hover:not(.select__inner_disabled):not(.select__inner_is-error):not(
+    .select__inner_readonly
+  ):not(.select__inner_is-successful) {
+  border-color: var(--bdr-input-hover); 
+  background : var(--bg-input);
+  color: var( --text-input );
+}

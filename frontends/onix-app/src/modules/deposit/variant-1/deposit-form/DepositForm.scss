@@ -1,0 +1,31 @@
+
+
+.pay-details{
+//   background: var(--test);
+    background:  var(--bg-3rd);
+    color: var(--text-2nd);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.apply-promo{
+    background: var(--bg-appyPromo);
+    color: var(--text-onAppyPromo);
+}
+.apply-promo-btn{
+    background: var(--bg-appyPromo);
+    color: var(--text-onAppyPromo);
+}
+
+
+// .cryp-tbl-title{
+ 
+// }
+.cryp-tbl {
+    th {
+        color: var(--text-thMuted);
+    }
+
+    th,td {
+        border-color: var(--bdr-tr);
+    }
+}

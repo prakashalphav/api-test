@@ -1,0 +1,62 @@
+.mainNavWrapper{
+  background: var(--bg-brand-blend);// linear-gradient(0deg, #101529, #101529),linear-gradient(0deg, #252D38, #252D38);
+}
+ 
+.downloadAppWrapper{
+  background:  var(--bg-brand-blend);//#232934;
+  // color:var(--text-onBgBrand);
+  // background: linear-gradient(180deg, transparent, var(--bg-brand-2nd) 100%);
+}
+
+.sectionTitle{
+  text-shadow: 1px 1px 25px var(--text), 0 0 1px  var(--text), 0 0 5px var(--text);//1px 1px 25px #DEAE34, 0 0 1px #000, 0 0 5px #000;
+}
+
+.promoWrapper, .contactWrapper, .faqWrapper{
+  border: 1px solid var(--bg-brand-contrast) ;//#596A8C;
+}
+
+.sectionTitleIcon{
+  color: var(--text-accent);// #EED904;
+}
+
+.divider{
+  background:var(--bg-brand-heavy-contrast);//#394254;
+  height: 1px;
+  opacity: 0.3;
+}
+
+.promoBtn, .faqBtn{
+  color:var(--text-onBgBrand);// #fff;
+  background: var(--bg-brand);//#495363;
+  box-shadow: 0px 3px 3px 0px var(--bg-brand-2nd) inset;
+}
+
+.promoSubText, .whatsappText, .line{
+  color:var(--text-3rd) ;//#A2ADB5;
+}
+
+.seeAllText{
+  color:var(--text-3rd) ;// #B1C5D4;
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1440px){
+  .gamesSlider{
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.promoDetails,.promoBtn,
+.faqBtn, a{
+  transition: transform 1000ms;
+}
+
+.promoDetails:hover,a:active{
+  transform: scale(.9);
+}
+
+.promoBtn:active,.faqBtn:active
+{
+  transform: scale(.7);
+}

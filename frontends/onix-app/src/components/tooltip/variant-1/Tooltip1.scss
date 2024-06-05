@@ -1,0 +1,144 @@
+
+ $tooltip-bg : rgba(31, 30, 30, 0.8);
+ $tooltip-color : #fff;
+ $tooltip-shadow : 0 1px 8px rgba(0,0,0,0.3);
+ 
+ /*internal -do not copy to variables*/
+ $tooltip-arrow-size :12px; 
+ .tooltip {
+    //   position: absolute; -- TW
+    min-width: 200px;
+    color: var(--text);
+    background: var(--bg-3rd);
+    z-index: 99999999;
+     box-shadow: var(--shadow);
+    //display :block; -- TW
+  
+    &.sm {
+      @apply text-xs px-2.5 py-1.5;
+    }
+  
+    &.md {
+      @apply text-xs px-3 py-2;
+    }
+    &.lg {
+      @apply text-sm px-3.5 py-3;
+      
+    }
+    &.top {
+      top: -10%; //-20px; //-10%
+      left: 50%;
+      transform: translate(-50%, -100%);
+  
+      & i {
+        top: 100%;
+        left: 50%;
+  
+        &::after {
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+      }
+    }
+  
+    &.bottom-right {
+      top: 110%; //110%
+      right: 0%;
+      transform: translate(0%, 0);
+      & i {
+        bottom: 100%;
+        left: 80%;
+  
+        &::after {
+          left: 50%;
+          transform: translate(-50%, 50%) rotate(45deg);
+        }
+      }
+    }
+    &.bottom-left {
+      top: 110%; //110%
+      left: 0%;
+      transform: translate(0%, 0);
+      & i {
+        bottom: 100%;
+        left: 20%;
+  
+        &::after {
+          left: 50%;
+          transform: translate(-50%, 50%) rotate(45deg);
+        }
+      }
+    }
+  
+    &.bottom {
+      top: 110%; //110%
+      left: 50%;
+      transform: translate(-50%, 0);
+      & i {
+        bottom: 100%;
+        left: 50%;
+  
+        &::after {
+          left: 50%;
+          transform: translate(-50%, 50%) rotate(45deg);
+        }
+      }
+    }
+    &.right {
+      top: 50%;
+      left: 100%;
+      transform: translate(0, -50%);
+  
+      & i {
+        top: 50%;
+        right: 100%;
+  
+        &::after {
+          left: 0;
+          top: 50%;
+          transform: translate(50%, -50%) rotate(-45deg);
+        }
+      }
+    }
+  
+    &.left {
+      top: 50%;
+      right: 100%;
+      transform: translate(0, -50%);
+  
+      & i {
+        top: 50%;
+        left: 100%;
+        &::after {
+          left: 0;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+  
+  // .tooltip:hover .bottom {
+  //     display:block;
+  // }
+  
+  .tooltip i {
+    //   position: absolute; -- TW
+    //   bottom: 100%;
+    //   left: 50%;
+    margin-left: #{-1 * $tooltip-arrow-size};
+    width: #{2 * $tooltip-arrow-size};
+    height: $tooltip-arrow-size;
+    //   overflow: hidden; -- TW
+  }
+  
+  .tooltip i::after {
+    content: "";
+    position: absolute;
+    width: $tooltip-arrow-size;
+    height: $tooltip-arrow-size;
+    //   left: 50%;
+    //   transform: translate(-50%, 50%) rotate(45deg);
+    background-color: var(--bg-3rd);
+    box-shadow: var(--shadow);
+  }

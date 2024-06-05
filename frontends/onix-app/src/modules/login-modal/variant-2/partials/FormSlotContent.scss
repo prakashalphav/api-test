@@ -1,0 +1,26 @@
+
+.registerBtn{
+  background: linear-gradient(360deg, #EED904 0%, #F4E303 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.registerBtn:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: linear-gradient(360deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.divider{
+  background: #fff;
+  height: 1px;
+}

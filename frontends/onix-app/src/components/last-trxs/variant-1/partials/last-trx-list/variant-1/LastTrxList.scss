@@ -1,0 +1,46 @@
+
+.prizeAmtText{
+  color: var(--bg-brand-heavy-contrast);//#EDC123;
+   
+}
+ 
+.userWrapper, .numOneUserWrapper, .numTwoUserWrapper, .numThreeUserWrapper{
+  background: radial-gradient(50% 35% at 50% 50%, var(--bg-brand-contrast) 0%, var(--bg-brand) 100%) ;// radial-gradient(50% 35% at 50% 50%, #364255 0%, #222D3E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+ color :var(--text-onBgBrand);
+}
+.numOneUserWrapper:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: radial-gradient(100% 100% at 49.92% 0%, rgba(255, 199, 0, 0.4) 0%, rgba(255, 218, 21, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.numTwoUserWrapper:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: linear-gradient(180deg, rgba(168, 198, 255, 0.3) 0%, rgba(137, 171, 234, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.numThreeUserWrapper:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  padding: 2px;
+  background: linear-gradient(180deg, rgba(172, 106, 6, 0.3) 0%, rgba(172, 106, 6, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}

@@ -1,0 +1,18 @@
+{
+  "runtime": {
+    "All": "全部",
+    "Bank": "银行",
+    "Crypto Currency": "加密货币",
+    "Direct Transfer": "直接转账",
+    "E-wallet": "电子钱包",
+    "FundMethodName": "{{methodName}}",
+    "New": "新",
+    "Pulsa": "Pulsa",
+    "Top": "热门",
+    "gold": "黄金",
+    "new": "新",
+    "platinum": "白金",
+    "regular": "普通",
+    "silver": "银色"
+  }
+}

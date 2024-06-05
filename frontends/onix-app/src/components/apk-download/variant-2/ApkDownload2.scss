@@ -1,0 +1,47 @@
+.apkDownload{
+  @screen sm {
+    // min-width: 400px;
+  }
+  &::before{
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    bottom: 0;
+    background-image: url(https://files.sitestatic.net/assets/imgs/onixv2/zplay/apk_download_girl.png);
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-size: contain;
+  }
+}
+.innerWrapper{
+  // background: radial-gradient(circle, #008900, #005700 60%);
+  background: linear-gradient(180deg, var(--bg-brand) 0%, var(--bg-brand-2nd)  100%);  //linear-gradient(180deg, #143F00 0%, #071600 100%);
+  // margin-top: 40px;
+  color : var(--text-onBgBrand);
+}
+.apkDownloadQR{
+  height: 92px;
+}
+.apkDownloadText{
+  // font-size: 10px;
+  margin-left: -10px;
+}
+@screen md {
+  .apkDownloadQR{
+    // height: 120px;
+    height: 92px;
+  }
+  .apkDownloadText{
+    margin-left: -20px;
+  }
+  .apkDownloadWrapper{
+    flex-basis: 40%;
+  }
+}
+@screen xl{
+  .innerWrapper{
+    // margin-top: 127px;
+  }
+}

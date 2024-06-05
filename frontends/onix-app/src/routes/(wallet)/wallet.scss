@@ -1,0 +1,9 @@
+
+.content__pg  {
+    .innerContent__wallet:first-of-type,.notice.innerContent__wallet{
+        background: var(--bg-pgContentInner); 
+        --text:var( --text-onPgContent );
+        
+        color:var( --text-onPgContent-2nd );
+      }
+}

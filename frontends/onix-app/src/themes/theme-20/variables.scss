@@ -1,0 +1,323 @@
+--text-muted :#c8c8c8;
+--bg-secondary: #090909;
+--container-bg: #070F0E;
+--container-text-color: #f5f5f5;
+--section-title-color: linear-gradient(180deg, #B77622 0%, #FFFFFF 100%);
+--spicr-nav-color: #ffffff;
+
+--modal-v1-bg: #000000;
+--modal-v1-text-color: #ffffff;
+
+/* header */
+--header-bg: #000000;
+--header-mob-bg: linear-gradient(180deg, #2cddc8 18.57%, #00B091 60.13%, #054D3A 100%);
+--header-icon-bg: #292C40;
+--header-icon-color: #ffffff;
+--mob-header-icon-bg: #000000;
+--wallet-ref-icon-color: #ffffff;
+--mob-header-color: #D0C1FF;
+--topbar-bg: linear-gradient(180deg, #2cddc8 18.57%, #00B091 60.13%, #054D3A 100%);
+--topbar-login-bg: linear-gradient(180deg, #2cddc8 18.57%, #00B091 60.13%, #054D3A 100%);
+--topbar-login-text: #ffffff;
+--header-btn-bg: #C15284;
+--header-btn-text: #ffffff;
+--game-bg-img: radial-gradient(100% 100% at 49.97% 0%, #333232 0%, #000000 100%);
+
+--mainmenu-text-color: #ffffff;
+--mobmenu-icon-color: #ffffff;
+--ann-marquee: #fff;
+
+
+
+
+/* header end*/
+
+/* button */
+--primary-btn-bg: radial-gradient(104.92% 91.43% at 50% 91.43%, #C59A31 0%, #C79D2E 47.7%, #DFE285 100%);
+--primary-btn-color: #ffffff;
+--primary-btn-hover-bg: radial-gradient(104.92% 91.43% at 50% 91.43%, #C59A31 0%, #C79D2E 47.7%, #DFE285 100%);
+--primary-btn-gradient-bg: radial-gradient(100% 100% at 50.24% 0%, #75EF34 0%, #4e7245 100%);
+--muted-btn-bg: #8B8B8B;
+--muted-btn-color: #ffffff;
+--history-btn-bg: #0e0e0e;
+--history-btn-color: #ffffff;
+--history-btn-bd-color: #00f044;
+--logout-btn-bg: radial-gradient(95.32% 133.16% at 50% -20%, #8B95AF 0%, #272841 50.91%, #272841 100%);
+--logout-btn-color: #ffffff;
+
+/* button end*/
+
+/* promotion */
+--promo-title-text-color: #B9F0DD; 
+--promo-desc-text-color: #96AFA9;
+--promo-add-btn-bg: #D7D7D7;
+--promo-add-btn-text-color: rgba(95, 95, 95, 1);
+--promo-add-btn-hover-bg: #3e8e41;
+--promo-add-btn-hover-text: #ffffff;
+--promo-reg-btn-bg:  #292C40 ;
+/* promotion end*/
+
+/* home */
+--gameslider-item-bg: radial-gradient(100% 100% at 50% 0%, #5C5A5A 0%, rgba(0, 0, 0, 0) 100%);
+--gameslider-item-active-bg: linear-gradient(180deg, #E4771F 0%, rgba(121, 70, 29, 0) 100%);
+--gameslider-img-bg: #000000;
+--gameslider-nav-bg: #000000;
+--gameslider-nav-text: #cccccc;
+--trx-title-bd-color: linear-gradient(180deg, #79461D 0%, rgba(121, 70, 29, 0) 100%);
+--trx-title-box-bg: radial-gradient(100% 749.03% at 0% 44.74%, #1B1A1A 0%, #020316 100%);
+--trx-title-active-bg: linear-gradient(270deg, #7956ED 0%, #395FFE 100%);
+--trx-slider-text-color: #D9D9D9;
+--trx-slider-bg: linear-gradient(180deg, #79461D 0%, rgba(121, 70, 29, 0) 100%);
+--trx-slider-box-bg: radial-gradient(100% 749.03% at 0% 44.74%, #1B1A1A 0%, #020316 100%);
+--trx-slider-gradient-title: linear-gradient(180deg, #A5A3A1 0%, #FEFEFE 37.29%, #ADABA9 70.1%, #FFFFFF 100%);
+--contact-box-bg: radial-gradient(100% 100% at 50% 0%, #222987 0%, rgba(0, 0, 0, 0) 100%);
+--contact-box-bd-color: #5F2FFA;
+--contact-box-desc-1: #969595;
+--contact-box-desc-2: #C5C5C5;
+--withdraw-box-bg: radial-gradient(95.32% 133.16% at 50% -20%, #8B95AF 0%, #1e5750 50.91%, #1d7077 100%);
+--deposit-box-bg: radial-gradient(95.32% 133.16% at 50% -20%, #8B95AF 0%, #1e5750 50.91%, #1d7077 100%);
+
+
+--bg-promoContent:linear-gradient(175deg, #076558 0%, #3abcae 100%);
+--home-promo-arrow-bg:#575656;
+--home-promo-arrow-bd-color:#575656;
+
+/* home end*/
+
+/* carousel */
+--carousel-dot-bg: #cccccc;
+--carousel-dot-active-bg: #0b72e7;
+/* carousel end*/
+
+/* member level */
+--memberlvl-icon-bg: linear-gradient(to right, #DBBE91, #79461D);
+--memberlvl-new-bg: #ffffff;
+--memberlvl-label-color: #BAB6B6;
+--memberlvl-value-color: #C5B7B7;
+--memberlvl-desc-bg: radial-gradient(100% 100% at 49.95% 0%, #2A365F 0%, #141427 43.92%, #00011D 100%);
+--memberlvl-desc-inner-bg: #0B0C30;
+--memberlvl-desc-bg2: #FFA800;
+--gold-lvl-bg: linear-gradient(90deg, #DBBE91 0%, rgba(121, 70, 29, 0.95) 100%);
+--gold-lvl-text-color: #ffff00;
+--new-lvl-bg: #ffffff;
+--new-lvl-text-color: #ffffff;
+/* member level end*/
+
+/* profile */
+--profile-container-bg: #141915;
+--profile-container-text : #ffffff;
+--profile-muted-bg: #F2EFFA;
+--field-text-color :#FFFFFF;
+
+--note-bg: linear-gradient(180deg, #12312E 0%, #0A1E1C 100%) ;
+--note-text-color: #ffffff;
+/* profile end*/
+
+
+
+
+/* input fields */
+--bg-input-disabled: #ffffff;
+--bg-input: transparent;
+--text-input: #ffffff;
+--bg-modal: #ffffff;
+--text-modal: #000000;
+--bg-input: transparent;
+--input-muted-hover-bd-color: #ffffff;
+--input-muted-dark-bg: #d4d4d4;
+--bdr-input: #b4b4b4;
+--input-muted-dark-bd-color: #909191;
+--input-icon-bg: #6435FA;
+--input-icon-text: #55657e;
+--toggle-btn-bg: #585858;
+--toggle-btn-bd-color: #858586;
+--file-input-bg: #010E00;
+--btn-file: #2F3233;
+--bdr-onBtnFile: #ffffff;
+--toggle-btn-active-bg: #F5FFEE;
+--toggle-btn-color: #ffffff;
+--toggle-btn-active-color: #00FF0A;
+/* input fields end*/
+
+/* tabmenu */
+
+--tabmenu1-btn-color: #ffffff;
+--tabmenu1-btn-active-color: #ffffff;
+--tabmenu1-bg : #292C40;
+--tabmenu1-active-bg: radial-gradient(104.92% 91.43% at 50% 91.43%, #C59A31 0%, #C79D2E 47.7%, #DFE285 100%);
+--tabmenu1-active-bd-color: transparent;
+    
+
+
+
+
+
+--tabmenu3-bg: linear-gradient(180deg, #151915 0%, #060606 100%);
+/* tabmenu end*/
+/* table */
+--pagination-item-color: #ffffff;
+--pagination-item-bg: #E9E2FF;
+--pagination-item-hover-bg: #c1a9dc;
+--tbl-row-muted-bd-color: #D1D0D6;
+--tbl-row-muted-bg: #c5c5c5;
+--tbl-row-dark-bg: #0a0a0a;
+--tbl-row-light-text: #ffffff;
+--tbl-muted-dark-text: #828282;
+/* table end*/
+
+/* deposit */
+--bg-payopt: #173E33;
+--text-onPayopt: #f5f5f5;
+--bg-payopt-active: radial-gradient(95.32% 133.16% at 50% -20%, #8B95AF 0%, #272841 50.91%, #272841 100%);
+--text-onPayOpt-active: #ffffff;
+--bdr-onPayOpt-active: #8E93BD;
+--bg-payOptFlag: rgba(128, 152, 146, 1);
+--bg-payOptFlag-active: rgba(0, 166, 126, 1);
+--text-onPayOptFlag: #ffffff;
+--bg-payOptMethod: #241C3C;
+--bg-payDetail: radial-gradient(95.32% 133.16% at 50% -20%, #8B95AF 0%, #272841 50.91%, rgba(39, 40, 65, 0) 100%);
+--bg-appyPromo: #bff5de;
+--text-onAppyPromo: #000000; 
+--bg-bonusEvt: #bff5de;
+--bdr-onBonusEvt: #156f4a;
+--bg-eventDesc: #777777;
+--text-onEventDesc: #ffffff;
+/* deposit end*/
+
+/* referral */
+--ref-close-icon-bg: #02c793;
+--ref-lvl1-icon-bg: #8f96a1;
+--ref-lvl1-icon-color: #000000;
+--ref-lvl2-icon-bg: #8263ff;
+--ref-lvl2-icon-color: #c9bdff;
+--ref-lvl3-icon-bg: #02cd9b;
+--ref-lvl3-icon-color: #5dd9b6;
+--ref-content-color:  #ffffff;
+/* referral end*/
+
+/* memo */
+--memo-bg: #000000;
+--memo-bd-color: #0d4c3e;
+--memo-del-btn-bg: #F4F4F4;
+--memo-del-btn-bd-color: #B1B6B6;
+--memo-text-light: #808080;
+--memo-text-dark: #f5f5f5;
+--memo-text-darker: #ffffff;
+/* memo end*/
+
+/* checkbox */
+--cbx-bg : #ffffff;
+--cbx-color : #FFC325;
+--cbx-bd-color : #ABABAB;
+/* checkbox end*/
+
+/* GameListing */
+--provider-slider-arrow: #B6B6B6;
+--provider-list-bg: #140416;
+--provider-img-bd-color: #00B091;
+--game-search-input-bg: #472748;
+--game-search-input-text: #ffffff;
+--bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+--text-onLabelHot: #ffffff;
+--bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+--text-onLabelNew: #ffffff;
+--game-item-bg: #000000;
+--sublobby-container-bg: #070F0E;
+--sublobby-container-text: #ffffff;
+/* GameListing end*/
+
+/* Lobby Game Listing*/
+--lobby-gameitem-bg: #000000;
+--lobby-gameitem-bd-color: #00B091;
+--bg-imgOverlay: #070F0E;
+/* Lobby Game Listing end*/
+
+/* contactbox*/
+--contactbox-bg: linear-gradient(90.63deg, rgba(28, 19, 68, 0) 2.37%, #0b5a54 99.49%);
+/* contactbox end*/
+
+/* footer*/
+--footer-bg: linear-gradient(180deg, #070f0e 0%, #000000 100%);
+--social-icons: #0F2322;
+--footer-menu-text: #FFFFFF;
+--footer-muted-text: #898989;
+--footer-collapse-bg: #0a0a0a;
+--footer-collapse-hover-bg: #0a0a0a;
+--footer-collapse-text: #FFFFFF;
+--footer-collapse-hover-text: #ffffff;
+--footer-collapse-arrow: #FFF;
+--bottombar-active-bg: #041000;
+--bottombar-active-text: #ffffff;
+/* footer end*/
+
+/*modal*/
+--modal-bg:#000000;
+--modal-text-color: #ffffff;
+--modal-close-color: #ffffff;
+/*modal end*/
+
+--popup-icon-bd-color : transparent;
+--popup-icon-color : #DE9634;
+--popup-icon-light-bg : #EFEBFA;
+--popup-icon-text : #313131;
+--sidenav-menu-text: #A5FFA5;
+
+
+
+
+/*from css vars*/
+
+--text-onPromoContent: white ;
+--home-promo-arrow-bg:#575656;
+--home-promo-arrow-bd-color:#575656;
+
+--text-color: #ffffff; 
+--text-dark-color: #ffffff;
+--text-muted:  #5E5E5E;
+--bg-color:linear-gradient(180deg, #0F2322 0%, #173231 23.15%, #050D0C 100%);
+--nude-btn-color:#ffffff;
+--nude-btn-bd-color:transparent;
+--page-title-bd-color:  #205F52;
+--text-brand:#B9BCFC;
+
+--h2-text-colorr: #AAA487;
+--muted-bd-color: #eeeeee;
+--muted-bg: #111111;
+--page-title-bg: #000000;
+--page-title-color: #EFFFF8;
+--page-title-sm-bg: transparent;
+--page-title-sm-color: #EFFFF8; 
+
+--scroller-bg: rgb(106, 106, 106) darkgrey;
+--bg-scrollbarTrack: #d9d9d9;
+
+--bg-scrollbarThumb: radial-gradient(100% 100% at 50% 0%, #1b1a1a 0%, #000000 100%);
+--bdr-scrollbarThumb: #d9d9d9;
+ /* promotion */
+--event-card-bg-color: #001616;
+ /* promotion end*/
+ 
+--tabmenu2-text-color : #838383;
+--tabmenu2-active-text-color: #ffffff;
+--tabmenu2-active-bd-color: #ef311f;
+
+--tabmenu3-text-color : #f5f5f5;
+--tabmenu3-active-text-color: #ffffff;
+--tabmenu3-active-bd-color: #6435FA;
+
+/* profile popup */
+--popup-bg : #272841;
+--popup-head-bg : #343552;
+--popup-text-accent : #565664;
+--popup-icon-bg : #121329;
+--popup-info-bg :radial-gradient(102.48% 68.07% at -2.48% 43.38%, #12796A 0%, #04392F 64.04%, #04392F 100%);
+--popup-light-bg : #ffffff;
+--popup-text-dark : #000000;
+--popup-text-light : #ffffff;
+/* profile popup end*/
+  /*home*/
+--lwd-shape-bg:#20504d;
+--ld-corner-bg: #165f5c;
+/*home end*/ 
+    
+

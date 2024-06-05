@@ -1,0 +1,34 @@
+ 
+  .provider-wrapper{
+    background: var(--bg-lobbyGame);
+    color : var(--text-onLobbyGame);
+    // .provider-name{
+    //   color: #9F9696;
+    // }
+    
+    .provider-image{
+
+      border-color: var(--bdr-onLobbyGame);
+    }
+  }
+
+  
+  .search input {
+    background: var(--bg);
+    color: var(--text-3rd);
+  }
+
+  .hot-label{
+    background: var(--bg-labelHot);
+    color: var(--text-onLabelHot);
+  }
+
+  .new-label{
+      background: var(--bg-labelNew);  
+      color: var(--text-onLabelNew);
+  }
+
+  .game-wrapper{
+    background: var(--game-item-bg);
+  }
+ 

@@ -1,0 +1,32 @@
+
+
+  
+  .boxInputSearch {
+    background: #161616;
+    color: #787878;
+    .inputSearchIcon{
+      background: #787878;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 50px;
+      
+      
+    }
+  }
+ 
+
+ 
+  .inputSearch { 
+    width: 1em;
+
+    &--expand { 
+      width:  10em;  
+    }
+
+
+    @screen md{
+      width:  20em;
+    }
+ 
+  }

@@ -1,0 +1,21 @@
+
+.select__inner {
+  border: 1px solid var(--bdr-input);
+  transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  background : var(--bg-input);
+  color: var(--text-input);
+}
+
+.select__inner_disabled {
+    border: 1px solid var(--bg-input-disabled);
+    background: var(--bg-input-disabled);
+}
+
+.select--md {
+    font-size: 14px;
+    .select__inner {
+      height: 50px;
+      border-radius: 4px;
+      padding: 0 13px;
+    }
+  }

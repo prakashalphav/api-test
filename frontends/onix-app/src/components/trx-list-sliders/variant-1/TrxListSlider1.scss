@@ -1,0 +1,33 @@
+
+
+.trx-slider{
+    
+    .box-wrap{
+        border: none; 
+        background-clip: border-box;
+        background: var(--trx-slider-bg);
+        padding:1px;
+        
+    
+    }
+
+    .box {
+        background: var(--trx-slider-box-bg); 
+        background-clip: border-box;
+        color: var(--trx-slider-text-color); 
+    }
+
+    .trx-name{
+        color: var(--trx-slider-text-color);
+        background: var(--trx-slider-gradient-title);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+line-height: 1.5;
+    }
+
+    .splide__slide{
+        padding-top:40px;
+    }
+}

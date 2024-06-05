@@ -1,0 +1,138 @@
+.header{
+    background:  var(--bg);// #27374C;
+    
+   color: var(--text); 
+}
+
+.announcementWrapper{
+    background:  var(--bg-2nd);// #232934;
+}
+
+.headerContainer{
+    @media (max-width: theme('screens.lg')) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.logo{
+    @media (max-width: theme('screens.md')) {
+        max-height: 64px;
+    } 
+    @screen md {
+        max-height: 70px;
+    }
+}
+.headerWrapper{
+    border-bottom: 0.25px solid var(--bg-4th);//#B4B5B7;
+    background:   var(--bg);//linear-gradient(0deg, #27374C, #27374C), linear-gradient(0deg, #B4B5B7, #B4B5B7);
+    &.fixed, .topMenu { 
+        @media (max-width: theme('screens.md')) {
+            height: 64px;
+        }
+
+        @screen md {
+            height: 70px;
+        }
+    } 
+
+    .logo,
+    .langMenu
+    {
+        transition: transform 1000ms;
+    }
+
+    .logo:active,
+    .langMenu:active
+    {
+        transform: scale(.7);
+    }
+}
+    
+.blkPadding{
+    @media (max-width: theme('screens.md')) {
+        height: 64px;
+    } 
+    @screen md {
+        height: 70px;
+    }
+}
+
+.loginBtn{
+    background: var( --bg-invert); 
+    color:var(--text-invert);
+    // background: linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+}
+
+.registerBtn{
+    background: var( --bg-invert); 
+    color:var(--text-invert);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.registerBtn:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.5rem;
+    padding: 2px;
+    background: var( --bg-invert);
+    // background: linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+@screen lg{
+    .header{
+        background:linear-gradient(180deg, var(--bg) 65.38%, transparent 96.71%)
+
+    }
+}
+
+.walletWrapper{
+    background: #E0CD071A;
+}
+
+.walletBalanceText{
+    background: var(--bg-accent);//var(--primary, linear-gradient(0deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media (max-width: theme('screens.md')) {
+        max-width: 135px;
+    }
+
+    @screen md {
+        max-width: fit-content;
+    }
+}
+
+.walletReloadBtn{
+    color: var(--text-accent);// #EED904;
+}
+
+.walletIcon{
+    background:var(--bg-accent);// linear-gradient(360deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%);
+    color: #fff;
+}
+
+.headerWrapper a.logo img,
+.headerWrapper > a,
+.headerWrapper > button,
+.langMenu
+{
+    transition: transform 1000ms;
+}
+
+.headerWrapper a.logo>img,
+.headerWrapper > a:active,
+.headerWrapper > button:active,
+.langMenu:active
+{
+    transform: scale(.7);
+}

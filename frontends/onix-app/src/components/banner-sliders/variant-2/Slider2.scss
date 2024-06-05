@@ -1,0 +1,25 @@
+
+.banner-slider{
+
+  
+
+.splide__pagination__page {
+    background: var(--carousel-dot-bg);
+    opacity: .7; 
+    border: 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin: 3px;
+    padding: 0;
+    position: relative;
+    transition: background-color .2s ease, transform .2s linear;
+
+}
+.splide__pagination__page.is-active { 
+  transform: scale(1.5);
+  /* changed from default bg-color to blue */
+  background: var(--carousel-dot-active-bg);
+}
+}

@@ -1,0 +1,85 @@
+ 
+   .spicr .item{
+    float :none;
+    display:block;
+    margin-right: 0;
+  }
+
+  .spicr-control {
+    width: 1em;
+  }
+  .wrapper {
+    border: none; 
+    padding: 1px;
+  }
+
+  .content {
+    background: var(--bg-2nd);
+    background-clip: border-box;
+    color: var(--text-2nd);
+  }
+
+  .title {
+    color: var(--text); 
+  }
+  // .text--accent {
+  //   background: linear-gradient(90deg,  var(--text) 0%, var(--text-accent)  100%);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   background-clip: text;
+  //   text-fill-color: transparent;
+  // }
+ 
+  .gold-coins{
+ 
+    perspective: 5600px;
+  }
+
+ 
+  .gold-coins img {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+  }
+
+ 
+  .gold-coins .gold {
+    transform: rotateY(90deg); /*flip to hide*/
+  }
+  .wrapper{
+    transition: transform 400ms linear ;
+    transform-origin: bottom;
+    will-change: transform;
+
+   
+  }
+  .item.active {
+   
+    .gold-coins .dull {
+      transform: rotateY(90deg);
+    } /*flip to hide*/
+ 
+    .gold-coins .gold {
+      transform: rotateY(0deg);
+    } /*flip to show*/
+
+  
+    .wrapper{ 
+        /*set the border*/
+      background-clip: border-box;
+      background: linear-gradient(180deg, var(--text-accent)  0%, var(--bg) 100%);
+      padding: 1px;
+      
+    }
+    
+  } 
+
+  .roundcorner-bg2 {
+    stop-color:  var(--bg-3rd);
+  }
+  
+  .roundcorner-bg1 {
+    stop-color: var(--bg-3rd);
+  } 

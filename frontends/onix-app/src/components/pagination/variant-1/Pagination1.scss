@@ -1,0 +1,23 @@
+
+
+.navigation-arrows{
+    background: var(--pagination-item-bg);
+    color: var(--pagination-item-color);
+    &:hover{
+        background: var(--pagination-item-hover-bg);
+    }
+    &.selected-page {
+        opacity: 1;
+    }
+}
+.navigation-numbers{
+   
+    opacity: 0.5;
+    // color: var(--pagination-item-color);
+    &:hover{
+        opacity: 1;
+    }
+    &.selected-page {
+        opacity: 1;
+    }
+}

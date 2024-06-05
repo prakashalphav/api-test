@@ -1,0 +1,29 @@
+.pin-code input {
+    transition: border-color 0.1s ease-in-out;
+    will-change: border-color;
+    outline: none;
+    border: 1px solid var(--bdr-input); 
+  }
+  .pin-code input:focus {
+    border-color: var(--bdr-input-hover);
+    outline: none;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  .pin-code input::-webkit-outer-spin-button,
+  .pin-code input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  .pin-code input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  
+  .num-btn {
+    background: linear-gradient(90deg, #f67435 0%, #f09e59 100%);
+  }
+  .num-btn.clear {
+    background: linear-gradient(90deg, #ff9548 0%, #43d2a4 100%);
+  }

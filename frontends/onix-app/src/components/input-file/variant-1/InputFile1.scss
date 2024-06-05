@@ -1,0 +1,22 @@
+
+.file-drop-area{
+    background: var(--bg-input);
+    color:  var(--text-input);
+    border: 1px dashed var(--bdr-input); 
+    &.is-active  ,&:hover {
+        // background: var(--bg-input);
+        border: 1px dashed var(--bdr-input-hover);
+      }
+   
+}
+.file-btn{
+    background: var(--btn-file); 
+    color : var(--bdr-onBtnFile);
+}
+.file-input{
+
+    &:hover {
+        background: var(--bg-input);
+        border: 1px dashed var(--bdr-input-hover);
+      }
+}    

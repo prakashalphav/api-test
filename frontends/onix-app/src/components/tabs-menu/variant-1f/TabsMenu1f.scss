@@ -1,0 +1,59 @@
+.tabsMenu {
+  background: #000;
+  color: var(--bg-brand-heavy-contrast);
+  max-width: 275px;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+//   height: 50px;
+  border-radius: 50px;
+//   padding-left: 2%;
+//   padding-right: 2%;
+  border: 1px solid #e06e00;
+
+  ul {
+    overflow-x: auto;
+    z-index: 1;
+
+    li {
+      width: 100%;
+      max-width: 76px;
+
+      @screen sm {
+        max-width: 150px;
+      }
+    }
+
+    @screen sm {
+      overflow-x: hidden;
+    }
+  }
+
+  @screen sm {
+    max-width: 956px;
+    // height: 100px;
+  }
+}
+
+.tabItem {
+  width: 100%;
+  height: 27px;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 10px;
+  padding: 0 10px 0 10px;
+
+  &.active,
+  &:hover {
+    background: linear-gradient(0deg, #ff800b 15.83%, #ffb92a 124.07%);
+  }
+
+  @screen sm {
+    height: 50px;
+    font-size: 16px;
+  }
+}

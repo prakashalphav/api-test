@@ -1,0 +1,25 @@
+.apkDownload{
+    background-image: url("https://files.sitestatic.net/assets/imgs/onixv2/wingaming/download_app_bg.webp");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // width: 440px;
+    // height: 182px;
+  }
+  .titleDownload1{
+    color: #fff;
+  }
+  .titleDownload2{
+    color: #0ED622;
+  }
+  .titleDownload3{
+    color: #FFD25C;
+  }
+
+  
+  .btnDownload{ 
+    color:var( --text-onBgAccent);
+    background: var(--bg-accent );
+    //color: #000;
+  //background: linear-gradient(180deg, #FFC325 0%,     #FF9C19 100%);
+  }

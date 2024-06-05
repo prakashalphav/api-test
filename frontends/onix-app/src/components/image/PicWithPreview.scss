@@ -1,0 +1,11 @@
+.real {
+    opacity: 1;
+  }
+  .show-preview .real {
+    opacity: 0;
+  }
+
+  img {
+    max-inline-size: 100%;
+    block-size: auto;
+  }

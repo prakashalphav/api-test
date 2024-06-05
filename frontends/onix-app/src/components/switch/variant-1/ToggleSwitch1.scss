@@ -1,0 +1,38 @@
+
+.slider{
+    background: var(--toggle-btn-bg);
+    border: 1px solid var(--toggle-btn-bd-color);
+    &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        left: -50%;
+        bottom: 3px;
+        background: var(--toggle-btn-color);
+        transition: all;
+        border-radius: 50%;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .switch input:checked + &{
+        background: var(--toggle-btn-active-bg);
+        border: 1px solid var(--toggle-btn-bg);
+        &::before{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+            left: 0;
+            bottom: 3px;
+            background: var(--toggle-btn-active-color);
+            transition: all;
+            border-radius: 50%;
+            transform: translateX(26px);
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+ .gameBoxProvider6{
+   
+  /* --bg-labelHot */
+  --bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+  /* --text-onLabelHot */
+  --text-onLabelHot: #ffffff;
+  /* --bg-labelNew */
+  --bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+  --text-onLabelNew: #ffffff;
+  /* --text-onLabelNew */
+ }
+
+ 
+ .labelHot,.labelNew{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.labelHot{
+  background: var(--bg-labelHot);
+  color: var(--text-onLabelHot);
+}
+.labelNew{
+  background: var(--bg-labelNew);  
+  color: var(--text-onLabelNew);
+}
+ 
+.overlay::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  z-index: -1;
+}
+.gameName{
+  color: white; //SL - hardcoded as the text is directly on image 
+} 
+
+.demoBtn, .playBtn{ 
+  &:hover{
+ 
+    opacity: 0.8;
+  }
+}
+.playBtn{
+  color: white; //SL - hardcoded as the text is directly on image 
+}
+.demoBtn{
+  color: #9A9A9A;//SL - hardcoded as the text is directly on image 
+} 
+
+.adjust-transform-origin{ 
+  transform-origin: center;
+  /*this is a utility class for the transform element, use this TWcss type naming 
+   is so that from   html can see clearer together with the TWcss tranform classes
+  */
+  /*mobile - 3n follow the grid columns on mobile */
+  &:nth-child(3n+1) {
+    
+    transform-origin: left;
+   }
+   &:nth-child(3n) {
+    transform-origin: right;
+   }
+  
+   /*desktop all center */
+   @screen sm{
+    transform-origin: center!important; 
+   }
+
+}

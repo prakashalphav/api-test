@@ -1,0 +1,14 @@
+.overlay{
+    background: var(--bg-2nd);
+    color: var(--bg-3rd);
+}
+
+  .jackpotWrapper
+  {
+      transition: transform 1000ms;
+  }
+
+  .jackpotWrapper:hover
+  {
+    transform: scale(.9); 
+  }

@@ -1,0 +1,44 @@
+.playBtn:before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+  }
+  .playBtnIcon{
+    color: #3CDCA0;
+  }
+  .demoBtn{
+    background: linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+    color: #fff;
+  }
+  
+  img{
+    display: block;
+    transition:   background-color 400ms linear;
+    background-color: var(--gameslider-img-bg);
+  }
+
+  .casino-game-7{
+    .splide__slide__container{ 
+    .slide__content{
+      border: 1px solid #525252;
+      border-radius: 1rem;
+     }
+    }
+  }
+
+  
+.playBtnIcon,.demoBtn {
+  transition: transform 500ms;
+}
+
+.playBtnIcon:hover,.demoBtn:hover{
+  transform: translateY(-5px);
+}

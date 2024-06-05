@@ -1,0 +1,22 @@
+
+.box-wrapper{
+    background: var(--bg-lobbyGame);
+    border-color: var(--bdr-onLobbyGame);
+    color : var(--text-onLobbyGame);
+
+}
+.hot-label{
+  background: var(--bg-labelHot);
+  color: var(--text-onLabelHot);
+}
+
+.new-label{
+    background: var(--bg-labelNew);  
+    color: var(--text-onLabelNew);
+}
+.img-wrapper {
+  .overlay {
+    background: var(--bg-imgOverlay);  
+  }
+}
+

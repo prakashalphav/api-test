@@ -1,0 +1,55 @@
+
+.headerMainNav{
+    background: var(--bg-hdrContent); 
+    color: var(--text-onHdrContent);
+    background-size: cover;
+    background-position: center center;
+
+    /* Fallback for browsers that do not support color-mix */
+  --bg-brand-heavy-contrast-mix-opacity: var(--bg-brand-heavy-contrast);
+  @supports (color: color-mix(white black)) {
+     /*mix to make color have some transparency*/
+     --bg-brand-heavy-contrast-mix-opacity: color-mix(in srgb, var(--bg-brand-heavy-contrast), #0000 5%);
+    // equivalent to - rgba(192, 172, 255, 0.90) 
+    
+  }
+
+  --bg-scrollbarTrack:#E9E7E7;/*this can hardcode because the content is hardcoded to be white bg*/
+}
+
+.group:hover .walletIcon , .navItem:hover{
+    color:var(--text-onHdrBtnIcon); 
+    background:var(--bg-hdrBtnIcon);
+    
+  }
+    
+
+
+
+.contentInner{
+    background: linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%); 
+    color:var(--text-onBgBrand);
+  }
+.dropdown{
+    color:  inherit;
+}
+
+.fade-in-bottom {
+    --fade-in-translateY : 20px; 
+    --animate-delay : 1s;  
+}
+ .contentInner{
+
+    opacity: 0;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.2s, z-index 0s linear 0.01s;
+ }
+.group:hover  .contentInner{
+    opacity: 1;
+    z-index: 100;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.2s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+    
+}
+

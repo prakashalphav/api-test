@@ -1,0 +1,18 @@
+{
+  "runtime": {
+    "All": "All",
+    "Bank": "Bank",
+    "Crypto Currency": "Crypto Currency",
+    "Direct Transfer": "Direct Transfer",
+    "E-wallet": "E-wallet",
+    "FundMethodName": "{{methodName}}",
+    "New": "New",
+    "Pulsa": "Pulsa",
+    "Top": "Top",
+    "gold": "gold",
+    "new": "new",
+    "platinum": "platinum",
+    "regular": "regular",
+    "silver": "silver"
+  }
+}

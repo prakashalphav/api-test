@@ -1,0 +1,564 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+
+ @layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rounded-inherit {
+    border-radius: inherit;
+  }
+
+  .text-xxs {
+    font-size: 0.65rem; /*10px*/
+  }
+  
+  .text-xxxs {
+    font-size: 0.5rem; /*8px*/
+  }
+ 
+  .no-ol{
+
+    outline: none;
+  }
+ 
+  .scroller--visible{
+    --bdr-scrollbarThumb: var(--bdr-scrollbarThumb);
+    --scroller-bg: var(--scroller-bg);
+    --bg-scrollbarTrack:  var(--bg-scrollbarTrack);
+    --bg-scrollbarThumb: var(--bg-scrollbarThumb);
+  }
+ 
+  .scroller--invisible{
+    --bdr-scrollbarThumb: transparent;
+    --scroller-bg: transparent;
+    --bg-scrollbarTrack: transparent;
+    --bg-scrollbarThumb: transparent;
+    scrollbar-width: none
+  }
+
+}
+html { 
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+
+/*import fonts here */
+@import './css/fonts/poppins';
+
+:root{
+ /*default*/
+  --font-family:'poppins',"poppins-fallback";
+}
+
+/*to change font family for different template, use this:*/
+// .zplay.body{
+//   --font-family:'poppins',"poppins-fallback";
+// }
+
+body {
+  font-size: 14px;  
+  font-family: var(--font-family); //'poppins',"poppins-fallback"
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color : var(--text-2nd);
+  background: var(--bg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top; 
+    //for side panels scroll bar behavior
+    overscroll-behavior: none;
+ 
+}
+// .text-secondary{
+// color: var(--bdr-neutral);
+// }
+#pageContent{
+  // background: url(/images/ui//backgrounds/theme-6/page_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: left top; 
+  min-height: 600px; /*SL added - to fix footer position too high up when pg content too little */
+  @screen lg {
+    background-size: 100% auto;
+    background-position: left top; 
+  }
+}
+#pageContent.homePg{
+  background-position: left 350px; //add offset value at backgroud-position top for sliding banner
+  @screen lg { 
+    background-position: left 450px; //add offset value at backgroud-position top for sliding banner
+  }
+}
+a{
+  cursor: pointer;
+}
+button {
+  background-clip: padding-box; 
+}
+
+.btn-success {
+  background: #5cb85c;
+  color: #fff;
+}
+.btn-info {
+  background: #5bc0de;
+  color: #fff;
+}
+.btn-warning {
+  background: #f0ad4e;
+  color: #fff;
+}
+.btn-danger {
+  background: #d9534f;
+  color: #fff;
+}
+
+/* Works on Firefox */
+@supports (not selector(::-webkit-scrollbar)) { 
+.scroller {
+  scrollbar-width: thin;
+  scrollbar-color:  var(--bg-scrollbarThumb) var(--bg-scrollbarTrack);
+}}
+/* Works on Chrome, Edge, and Safari */
+.scroller::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: var(--bg-scrollbarTrack);
+}
+
+@screen sm {
+  .scroller::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+}
+ 
+.scroller::-webkit-scrollbar-track {
+  background: var(--bg-scrollbarTrack);
+  border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: var(--bg-scrollbarThumb);
+  border-radius: 10px;
+  border: 2px solid var(--bdr-scrollbarThumb); /* creates padding around scroll thumb */
+}
+
+// .header[data-state=show] {
+//   transform: translateY(0%);
+//   box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2);
+//   transition: transform .25s cubic-bezier(.1,.7,.1,1),box-shadow .25s;
+// }
+
+// .header[data-state=hidden] {
+//   transform: translateY(-100%);
+//   transition: transform .25s cubic-bezier(.8,0,.6,1),box-shadow .25s;
+// }
+
+ 
+
+.popUpMenu{
+
+  background: var(--bg-3rd);
+  color: var(--text);
+
+  & li:hover{
+    background:var(--bg-4th);
+  }
+}
+.icon__popUpMenu{
+
+  color: var(--popup-icon-text);
+   background: var(--popup-icon-light-bg);
+}
+.popUpMenuMobile{
+  background: var(--popup-bg); 
+  color: var(--popup-text-light); 
+}
+.inner__popUpMenuMobile{
+  background: var(--popup-info-bg);
+}
+
+.content__pg  {
+  background: transparent; 
+  @screen lg {
+    background: var(--bg-pgContent); 
+    color : var(--text-onPgContent-2nd); 
+    // --text-input  : var(--text-onPgContent-2nd);
+    .title__pg{
+      --text:var(--text-onPgContent); 
+     }
+  }  
+}
+.btnPrimary{
+  background: var(--btn);//--btn-hdr
+    color: var(--text-onBtn);//--text-onBtnHdr
+    border: var(--bdr-onBtn);
+    box-shadow:  var(--shadow-onBtn);
+  &:disabled{
+      opacity: 0.5;
+    }
+}
+ 
+.btnSecondary{
+  background: var(--btn-2nd);//--btn-hdr-2nd
+  color: var(--text-onBtn2nd);// 
+  border:var(--bdr-onBtn2nd);
+  box-shadow:  var(--shadow-onBtn2nd);
+  &:disabled{
+    opacity: 0.5;
+  }
+}
+ 
+/* button status color */
+.status-success {
+  background: #1ACB2C;
+  color: #fff;
+}
+.status-danger {
+  background: #C70022;
+  color: #fff;
+}
+.status-warning {
+  background: #ffc107;
+  color: #fff;
+}
+.text-danger {
+  color: #C70022; 
+}
+.perspective-1500 {
+  perspective: 1500px;
+  backface-visibility: hidden;
+}
+
+.perspective-500 {
+  perspective: 500px;
+  backface-visibility: hidden;
+}
+
+
+/**
+ * ----------------------------------------
+ * animatioms
+ * ----------------------------------------
+ */
+.animate  {
+  --animate-duration: 0.5s;
+  --animate-delay: 0s;
+  --animate-repeat: 1; 
+  --animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+ 
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:  var(--animate-delay);
+  animation-timing-function:var(--animation-timing-functionn);
+
+}
+.scale-in-center {
+ 
+  --animation-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);  
+  animation-name: scale-in-center;
+}
+
+.fade-in-bottom {
+  --fade-in-translateY : 50px; 
+  --animate-delay : 0.5s; 
+  --animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+  animation-name: fade-in-bottom; 
+}
+
+ 
+.slide-in-bottom{
+  --animation-timing-function: ease;
+  --animate-duration: 1s;
+  --animate-delay: 0s;
+  --slide-in-translateY: 200px;
+  animation-name: slide-in-bottom;
+}
+ 
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(var(--fade-in-translateY));
+            transform: translateY(var(--fade-in-translateY));
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(var(--fade-in-translateY));
+            transform: translateY(var(--fade-in-translateY));
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-left {
+  --fade-in-translateX : 50px; 
+  --animate-delay : 0.5s; 
+  --animate-duration: 1s;
+  --animation-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+  animation-name: fade-in-left 
+}
+
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  85% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateX( 5px);
+            transform: translateX( 5px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(var(--slide-in-translateY));
+            transform: translateY(var(--slide-in-translateY));
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(var(--slide-in-translateY));
+            transform: translateY(var(--slide-in-translateY));
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.slide-in-br{
+  --animation-timing-function: ease;
+  --animate-duration: 1s;
+  --animate-delay: 0s;
+  --slide-in-br-translateY: 200px;
+  --slide-in-br-translateX: 1000px;
+  animation-name: slide-in-br;
+}
+.slide-in-tl{
+  --animation-timing-function: ease;
+  --animate-duration: 1s;
+  --animate-delay: 0s;
+  --slide-in-tl-translateY: -600px;
+  --slide-in-tl-translateX: -1000px;
+  animation-name: slide-in-tl;
+}
+ 
+/**
+ * ----------------------------------------
+ * animation slide-in-tl
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-tl {
+  0% {
+    -webkit-transform: translateY(-600px) translateX(-1000px);
+            transform: translateY(-600px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-tl {
+  0% {
+    -webkit-transform: translateY(-600px) translateX(-1000px);
+            transform: translateY(-600px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-br
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-br {
+  0% {
+    -webkit-transform: translateY(600px) translateX(1000px);
+            transform: translateY(600px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-br {
+  0% {
+    -webkit-transform: translateY(600px) translateX(1000px);
+            transform: translateY(600px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+ 
+.text-nude-color{
+  color : var(--nude-btn-color);
+}
+.border-nude-color{
+  border-color: var(--nude-btn-bd-color);
+}
+ 
+.muted-bd-color{
+  border-color: var(--muted-bd-color);
+}
+.muted-bg{
+   
+background:  var(--muted-bg);
+}
+
+.max-w-screen{
+  // mobile screen have mx-3
+  @apply mx-3 max-w-full;
+}
+
+.max-w-screen--xs-full{ 
+  // mobile screen no mx, full screen
+  @apply max-w-full;
+}
+.max-w-screen ,.max-w-screen--xs-full {
+  //when use this class  , do not use mx-auto or width styling on the same on the elemeent
+ 
+  @screen sm{ 
+    margin-left : 24px; 
+    margin-right:24px;
+  }
+
+  @screen md{
+    margin-left :32px; 
+    margin-right:32px;
+  }
+
+  @screen lg{
+    margin-left :40px; 
+    margin-right:40px;
+  }
+
+  @screen xl{
+    //1280px
+    margin-left : 55px; 
+    margin-right:55px; 
+  }
+ 
+
+}
+
+@media (min-width: 1440px){
+  .max-w-screen, .max-w-screen--xs-full{
+    max-width: 1330px;
+    @apply mx-auto;
+  }
+ 
+}
+
+a, button
+{
+    transition: transform 1000ms;
+}
+
+a:active, button:active
+{
+    transform: scale(.7);
+}

@@ -1,0 +1,148 @@
+.grid-games {
+  .splide__pagination {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .splide__pagination__page {
+    background-color: transparent;
+    opacity: 0.7;
+    border: 1px solid #3c3166;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 3px;
+    padding: 0;
+    position: relative;
+    transition: background-color 0.2s ease, border-color 0.2s linear;
+  }
+  .splide__pagination__page.is-active {
+    /* changed from default bg-color to blue */
+    background-color: #7e69d0;
+    border-color: #7e69d0;
+  }
+
+  .tag-category {
+    background: linear-gradient(90deg, #fd25b9 0%, #ffab12 100%);
+  }
+
+  .game-name {
+    color: #c5b3f2;
+  }
+  .play-btn {
+    background: linear-gradient(
+      90deg,
+      #dbbe91 0%,
+      rgba(121, 70, 29, 0.95) 100%
+    );
+  }
+  .game-row {
+    background: linear-gradient(
+        0deg,
+        rgba(129, 70, 230, 0.2),
+        rgba(11, 6, 20, 0.2)
+      ),
+      linear-gradient(180deg, #352175 0%, rgba(129, 70, 230, 0) 55.21%),
+      linear-gradient(
+        106deg,
+        rgba(129, 70, 230, 0.2) 0%,
+        rgba(129, 70, 230, 0) 100%
+      );
+
+    border-radius: 30px;
+  }
+
+  .wave {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: linear-gradient(88deg, #0e0f24, #0e0f24b8);
+    --mask: radial-gradient(33px at 33px 50%, #000 99%, #0000 101%) 0
+        calc(50% - 66px) / 100% 132px,
+      radial-gradient(33px at 0px 50%, #0000 99%, #000 101%) 33px 50%/100% 132px
+        repeat-y;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}
+
+.grid-games-slider {
+  .bg-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 70%, rgb(0 0 0 / 90%) 90%, #000000 100%);
+  }
+  .splide__slide.is-active {
+    animation-delay: 2s;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+}
+.grid-games-slider-1 {
+  .splide__slide.is-active {
+    animation-delay: 0.4s;
+    animation: swing-in-bottom-bck 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      both;
+  }
+
+  .image-wrap {
+    border: 5px solid #b9dedc;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation swing-in-bottom-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes swing-in-bottom-bck {
+  0% {
+    -webkit-transform: rotateX(-70deg);
+    transform: rotateX(-70deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-bottom-bck {
+  0% {
+    -webkit-transform: rotateX(-70deg);
+    transform: rotateX(-70deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}

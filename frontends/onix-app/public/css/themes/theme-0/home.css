@@ -1,0 +1,53 @@
+:root {  
+
+ 
+--bg-listItem :radial-gradient(100% 100% at 50% 0%, #222987 0%, rgba(0, 0, 0, 0.00) 100%) ; 
+--bdr-onListItem : 1px solid #5F2FFA; 
+/* home */
+--lwd-shape-bg: #101239;  
+ 
+ 
+/* carousel */
+--carousel-dot-bg: #cccccc;
+--carousel-dot-active-bg: #0b72e7;
+/* carousel end */
+
+
+
+ /*scoped home page vars */
+ /*on mobile home hav*/
+ --bg-homeNav:linear-gradient(180deg, #4B4B4B 0%, #000000 29.73%);
+
+ --bg-homeContent:linear-gradient(180deg, var(--bg) 0%, #4C16FB 100%); 
+ --text-onHomeContent: white ;
+  
+--bg-homeListContent : linear-gradient(180deg,  var(--bg-2nd) 95%,  #4C16FB 100%); 
+/* --shadow-homeListContent :   /*for Light Mode, use shadow */
+ 
+/*
+
+
+  --gameslider-item-bg: radial-gradient(100% 100% at 50% 0%, #5C5A5A 0%, rgba(0, 0, 0, 0) 100%); 
+--gameslider-item-active-bg: linear-gradient(180deg, #E4771F 0%, rgba(121, 70, 29, 0) 100%);
+--gameslider-img-bg: #000000;
+--gameslider-nav-bg: #000000;
+--gameslider-nav-text: #cccccc;
+
+
+--trx-title-bd-color: linear-gradient(180deg, #79461D 0%, rgba(121, 70, 29, 0) 100%);  
+--trx-title-box-bg: radial-gradient(100% 749.03% at 0% 44.74%, #1B1A1A 0%, #020316 100%); 
+--trx-title-active-bg: linear-gradient(270deg, #7956ED 0%, #395FFE 100%); 
+--trx-slider-text-color: #D9D9D9;
+--trx-slider-bg: linear-gradient(180deg, #79461D 0%, rgba(121, 70, 29, 0) 100%); 
+--trx-slider-box-bg: radial-gradient(100% 749.03% at 0% 44.74%, #1B1A1A 0%, #020316 100%);
+--trx-slider-gradient-title: linear-gradient(180deg, #A5A3A1 0%, #FEFEFE 37.29%, #ADABA9 70.1%, #FFFFFF 100%);
+--contact-box-bg: radial-gradient(100% 100% at 50% 0%, #222987 0%, rgba(0, 0, 0, 0) 100%);
+--contact-box-bd-color: #5F2FFA;
+--contact-box-desc-1: #969595;
+--contact-box-desc-2: #C5C5C5;
+
+/* home end*/
+ 
+
+ 
+}

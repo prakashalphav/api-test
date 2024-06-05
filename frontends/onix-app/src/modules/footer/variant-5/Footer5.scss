@@ -1,0 +1,23 @@
+
+.footer{
+ 
+    background: var(--bg-2nd); //#0E0E0E;
+    color: var(--text-2nd);
+} 
+
+.divider{
+    background: var(--text-3rd); // #38444C;
+    height: 1px;
+}
+.title{
+    color:var(--text); 
+    
+    //color: #fff;
+    // font-weight: bold;
+}
+.aboutContent{
+    background-color:  var(--bg-3rd); // #171717;
+}
+.browserIcon{
+    background-color: #000000; //SL - hardcoded bg as the icons on it are hardcoded multi colors 
+}

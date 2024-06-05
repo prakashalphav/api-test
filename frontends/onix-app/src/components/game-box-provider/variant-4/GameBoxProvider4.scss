@@ -1,0 +1,61 @@
+ .gameBoxProvider4{
+  
+  /* --bg-labelHot */
+--bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+/* --text-onLabelHot */
+--text-onLabelHot: #ffffff;
+/* --bg-labelNew */
+--bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+--text-onLabelNew: #ffffff;
+/* --text-onLabelNew */
+ }
+
+ .gameWrapper{
+  background: var(--game-item-bg);
+}
+  
+ .labelHot{
+  background: var(--bg-labelHot);
+  color: var(--text-onLabelHot);
+}
+
+.labelNew{
+  background: var(--bg-labelNew);  
+      color: var(--text-onLabelNew);
+}
+ 
+.overlay{
+  background-color: rgb(255 255 255 / 0.3);
+ }
+ .gameName{
+  color: black;
+ }
+ .playBtn{
+  background-color: rgb(22 163 74 / 1); 
+  color: white;
+ }
+
+ .demoBtn{ 
+  background-color: rgb(75 85 99 /1);
+  color: white; 
+ }
+  .adjust-transform-origin{ 
+    transform-origin: center;
+    /*this is a utility class for the transform element, use this TWcss type naming 
+     is so that from   html can see clearer together with the TWcss tranform classes
+    */
+    /*mobile - 3n follow the grid columns on mobile */
+    &:nth-child(3n+1) {
+      
+      transform-origin: left;
+     }
+     &:nth-child(3n) {
+      transform-origin: right;
+     }
+    
+     /*desktop all center */
+     @screen sm{
+      transform-origin: center!important; 
+     }
+  
+  }

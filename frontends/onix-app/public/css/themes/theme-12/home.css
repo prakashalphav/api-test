@@ -1,0 +1,29 @@
+:root{
+      --bg-listItem :radial-gradient(100% 100% at 50% 0%, #554711 0%, rgba(0, 0, 0, 0.00) 100%) ; 
+      --bdr-onListItem : 1px solid #FFD524; 
+      /*New*/
+ 
+ /* home */
+ --lwd-shape-bg: #414141;
+ 
+ /* carousel */
+ --carousel-dot-bg: #cccccc;
+ --carousel-dot-active-bg: #0b72e7;
+ /* carousel end */
+    
+  /*
+  
+  /*scoped home page vars */
+  /*on mobile home hav*/
+   --bg-homeNav:linear-gradient(180deg, #4B4B4B 0%, #000000 29.73%);
+ 
+   --bg-homeContent:linear-gradient(180deg, #ffb700  0%, #000000 100%);
+   --text-onHomeContent: white ;
+    
+  --bg-homeListContent : linear-gradient(180deg,  var(--bg-2nd) 0%,  var(--bg-4th) 90%, #ffb700 100% ); 
+ /* --shadow-homeListContent :   /*for Light Mode, use shadow */
+    /*OLD*/
+    
+
+
+   }

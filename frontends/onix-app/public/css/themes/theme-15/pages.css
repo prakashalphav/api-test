@@ -1,0 +1,134 @@
+:root{
+
+    
+    /* NEW */
+  
+  /* referral */
+  /* --ref-close-icon-bg */
+  --icon-refClose: #02c793;
+  /* --ref-lvl1-icon-bg  */
+  --text-refColumn: #8f96a1;
+  /* --ref-lvl2-icon-bg: #8263ff; */
+  --text-refColumn-2nd: #8263ff; 
+  /* --ref-lvl2-icon-color: #c9bdff; */
+  --text-refColumn-3rd: #c9bdff;
+  /*   
+  /* referral end*/
+  
+  
+  /* Lobby Game Listing*/ 
+  --bg-lobbyGame: #261A16;
+  --text-onLobbyGame: var(--text-invert);
+  --bdr-onLobbyGame: var(--text-accent);
+  --bg-imgOverlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.19%, #020316 85.19%);
+  /* Lobby Game Listing end*/
+  
+  
+   
+  /* --bg-labelHot */
+  --bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+  /* --text-onLabelHot */
+  --text-onLabelHot: #ffffff;
+  /* --bg-labelNew */
+  --bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+  --text-onLabelNew: #ffffff;
+  /* --text-onLabelNew */
+  
+  /* GameListing end*/
+  
+  
+  
+/* deposit */
+--bg-payopt: #101010;
+--text-onPayopt: #ffffff;
+--bg-payopt-active: linear-gradient(90deg, #991850 0%, #DE1E71 100%);
+--text-onPayOpt-active: #ffffff;
+--bdr-onPayOpt-active: transparent;
+--bg-payOptFlag: rgba(128, 152, 146, 1);
+--bg-payOptFlag-active: rgba(0, 166, 126, 1);
+--text-onPayOptFlag: #ffffff;
+--bg-payOptMethod: #241C3C;
+--bg-payDetail: linear-gradient(180deg, #4E2701 0%, #1F0205 100%);
+--bg-appyPromo: #bff5de;
+--text-onAppyPromo: #000000; 
+--bg-bonusEvt: #bff5de;
+--bdr-onBonusEvt: #156f4a;
+--bg-eventDesc: #777777;
+--text-onEventDesc: #ffffff;
+/* deposit end*/
+  
+  
+  /* profile */
+/* --profile-container-bg: #e9e9e9;
+--profile-container-text : #000000;
+--profile-muted-bg: #8f8f8f;
+--field-text-color :#000000;
+
+
+--note-bg: linear-gradient(180deg, #212020 0%, #010214 95.83%, #090B34 100%);
+--note-text-color: #ffffff; */
+/* profile end*/
+  /* profile */
+  --profile-container-bg:var(--bg);/* var(--bg-3rd);  */
+  
+  
+  /* #2a2329; */
+  --profile-container-text : var(--text);
+  --profile-muted-bg:  var(--bg-2nd);
+  --field-text-color :var(--text);
+  
+  --note-bg: #031538;  /* var(bg-3rd) ; */
+   
+  --note-text-color:   #ffffff;  /* var(--text); */
+  /* profile end*/
+  --text-muted :var(--text-3rd);
+  /* #c8c8c8; */
+  
+   
+   
+  /* table */
+  --pagination-item-color: #000000;
+  --pagination-item-bg: var(--bg-3rd);
+  --pagination-item-hover-bg: var(--bg-4th);
+  --bdr-tr: #D1D0D6; /* var(--text-3rd); *
+  /* --tbl-row-muted-bg: #c5c5c5; */
+  /* --tbl-row-dark-bg */
+  --bg-thead: #0a0a0a;
+  --text-thead: #ffffff; /* var(--text-2nd); */
+  /* --tbl-row-light-text: 
+  #ffffff; */
+  /* --tbl-muted-dark-text */
+  --text-thMuted: #828282;
+  /* table end*/
+  
+  
+  /* member level */
+  --memberlvl-icon-bg: linear-gradient(to right, #DBBE91, #79461D);
+  --memberlvl-new-bg: #ffffff;
+  --memberlvl-label-color: #BAB6B6;
+  --memberlvl-value-color: #C5B7B7;
+  --memberlvl-desc-bg: radial-gradient(100% 100% at 49.95% 0%, #2A365F 0%, #141427 43.92%, #00011D 100%);
+  --memberlvl-desc-inner-bg: #0B0C30;
+  --memberlvl-desc-bg2: #FFA800;
+   
+  /* member level end*/
+   
+  /* memo */
+  --memo-bg: #F1F1F1;
+  --memo-bd-color: #D0D0D0;
+  --memo-del-btn-bg: #F4F4F4;
+  --memo-del-btn-bd-color: #B1B6B6;
+  --memo-text-light: #808080;
+  --memo-text-dark: #524D4D;
+  --memo-text-darker: #212223;
+  /* memo end*/
+  
+   /*OLD*/
+  }
+
+
+  .card__promoItem .content{
+    background: #000!important;
+    color : #C7C9CA!important;
+    --text: #fff;
+  }

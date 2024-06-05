@@ -1,0 +1,18 @@
+/* only for Wingaming specific color styles*/
+
+.wingaming .modalContainer{
+    --bg-modal: #080A0CE0; 
+    --bg-onModalContent : var(--bg-modal);
+    --text-onModal : #fff;
+    --bdr-onModal : #fff;
+    
+ 
+    --text-input: #fff;
+    --bg-input : #2e2e2e; 
+    --bdr-input: #2e2e2e; 
+
+
+    --btn: linear-gradient(360deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%);
+    --bdr-onBtn: 6px;
+    --text-onBtn: #000;
+  }

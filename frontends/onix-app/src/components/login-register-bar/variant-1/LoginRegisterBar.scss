@@ -1,0 +1,12 @@
+.loginBtn{
+  // color: #fff;
+  // background: linear-gradient(180deg, #00AF00 0%, #005400 100%);
+  color: var(--text-onBtn);
+  background: var(--btn);
+}
+.registerBtn{
+  // color: #000;
+  // background: linear-gradient(180deg, #C0C0C0 0%, #fff 100%);
+  background: linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);
+  color: var(--bg-brand-heavy-contrast);
+}

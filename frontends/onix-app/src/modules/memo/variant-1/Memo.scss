@@ -1,0 +1,31 @@
+
+button svg{
+    display: inline;
+}
+.delete-btn{
+    background: var(--memo-del-btn-bg);
+    border: 1px solid var(--memo-del-btn-bd-color);
+}
+ 
+ 
+.memo-container{
+    background: var(--memo-bg);
+    border: 1px solid var(--memo-bd-color);
+    &.read{
+        background: rgba(var(--memo-bg), 0.5);
+    }
+    & .memo-sender{
+        color: var(--memo-text-darker);
+    }
+    & .memo-time{
+        color: var(--memo-text-light);
+    }
+    & .memo-content{
+        color: var(--memo-text-dark);
+    }
+}
+
+.break-words{
+    overflow-wrap: break-word;
+    word-break:  break-word;
+}

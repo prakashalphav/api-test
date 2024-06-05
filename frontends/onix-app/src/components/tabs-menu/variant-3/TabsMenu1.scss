@@ -1,0 +1,16 @@
+
+.tabs {
+    // --menu-text-color : var(--tabmenu3-text-color)  ;
+    // --menu-active-text-color: var(--tabmenu3-active-text-color);
+    // --menu-active-bd-color: var(--tabmenu3-active-bd-color);
+    background: var(--bg-3rd);
+   
+    color : var(--text-3rd);
+    // color: #545454;
+}
+
+.tab--selected{
+    color : var(--text);
+    font-weight: 700;
+    // background: var(--bg-4th);
+}

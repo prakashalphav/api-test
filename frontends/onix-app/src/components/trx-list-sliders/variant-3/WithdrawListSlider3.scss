@@ -1,0 +1,97 @@
+
+ 
+  .item{
+    float :none;
+    display:block;
+    margin-right: 0;
+  }
+
+  .spicr-control {
+    width: 1em;
+  }
+
+  .wrapper {
+    border: none;
+ 
+    padding: 1px;
+  }
+
+  .content {
+    background: var(--bg-2nd);
+    background-clip: border-box; 
+    color: var(--text-2nd);
+  }
+
+  .title {
+    color: var(--text); 
+  }
+  // .text--accent {
+  //   background: linear-gradient(90deg,  var(--text) 0%, var(--text-accent) 100%);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   background-clip: text;
+  //   text-fill-color: transparent;
+  // }
+
+  
+
+ 
+  .leaf-left, .leaf-right {
+    width: 45px;
+    height: 66px;
+    perspective: 2970px;
+  }
+  .trophy {
+    width: 60px;
+    height: 59px;
+    perspective: 3540px;
+  }
+
+  .leaf-left img,
+  .leaf-right img,
+  .trophy img {
+    position: absolute; 
+    left: 0;
+    
+    transition: transform 0.5s, tranform-origin 0.5s;
+    backface-visibility: hidden;
+    transform-origin: center center -50% ;
+  }
+  .leaf-left img,
+  .leaf-right img {
+    bottom: 0;
+  }
+  .trophy img {
+    top: 0;
+  }
+
+  .leaf-left .gold,
+  .leaf-right .gold,
+  .trophy .gold {
+    transform-origin:center center 0;
+    transform: rotateY(90deg); /*flip to hide*/
+  }
+ 
+  .item.active  {
+    .leaf-left .dull,
+    .leaf-right .dull,
+    .trophy .dull {
+      transform: rotateY(90deg);
+    } /*flip to hide*/
+    .leaf-left .gold,
+    .leaf-right .gold,
+    .trophy .gold {
+      transform: rotateY(0deg);
+    } /*flip to show*/
+ 
+    .ribbon{
+        @apply block;
+    }
+    .wrapper { 
+       /*set the border*/
+        background-clip: border-box;
+        background: linear-gradient(180deg, var(--text-accent)  0%, var(--bg) 100%);
+        padding: 1px;
+      }
+  }
+ 

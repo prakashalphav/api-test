@@ -1,0 +1,22 @@
+
+.pay-opt {
+  background: var(--bg-payopt);
+  color: var(--text-onPayopt);
+  border: 1px solid transparent;
+  &.active {
+    background: var(--bg-payopt-active);
+    border-color: var(--bdr-onPayOpt-active);
+    // border-bottom: 0;
+    color: var(--text-onPayOpt-active);
+  }
+}
+
+.pay-opt__flag {
+  background: var(--bg-payOptFlag);
+  &.active {
+    background: var(--bg-payOptFlag-active);
+  }
+}
+// .pay-opt__name {
+//   color: var(--text-onPayOptFlag);
+// }

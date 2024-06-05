@@ -1,0 +1,129 @@
+ 
+.bottomBarNav{
+   
+    background:  var(--bottom-nav-bg);//linear-gradient(to bottom, #3E3E49, #19094f);
+    filter: url("#goo");
+ 
+    #filter-svg{
+        display: none; 
+    }
+
+    .menu {
+        
+        z-index: 1;
+        // overflow: hidden;
+        @apply text-center;
+        @apply relative;
+        color:  var(--bottom-nav-color);
+       
+        
+        svg {
+            @apply mx-auto;
+        }
+        &.active{
+            color: var(--bottom-nav-color-active); // #A296F4; //#CCBEFA  
+    
+            // .title {
+            //     display: block;
+            // }
+        }
+    }
+    .menu:not(.center){
+        width: 40px;
+    }
+    
+    .curve{
+        width: 70px;
+        height: 70px;
+        background:  var(--bottom-nav-bg);
+        top:-8px;
+        left : 50%;
+        transform : translateX(-50%);
+        z-index: -1;
+        transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .menu.center{ 
+        transform: translateY(-20%);
+        font-size: 30px;
+        transition: transform 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
+    
+        .icon {
+            background:   var(--bottom-center-bg);
+             color : var(--bottom-center-color);
+          
+        }
+    }
+     
+
+}
+
+
+// #filter-svg {
+//     display: none;
+// }
+
+.popup-menu {
+ 
+    --degrees :0;
+    left : 50%;
+    top:40%;
+    // display:none;
+    transform: translateX(-50% );
+      --size: 65px;
+       --offset: 100px;
+    
+   .icon {
+    width: var(--size);
+    // height: 60px;
+    opacity: 0;
+    background: var(--bottom-popup-icon-bg); 
+    box-shadow: 0px 0px 20px -4px #1c1344; 
+      color: var(--bottom-popup-icon-color);
+      aspect-ratio: 1;
+       top: calc(50% - var(--size) / 2);
+    left: calc(50% - var(--size) / 2);
+    transform: translate(
+        calc(  -0.70710678  * var(--offset)),
+        calc(   -0.70710678  * var(--offset)) 
+      
+    );
+     
+    transition-property: transform,opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+
+    &.active{
+        color: --var(bottom-popup-icon-color-active) ; 
+    }
+   }
+
+   &.show {
+    // display: block;
+   .icon {
+    opacity: 1;
+    
+   }
+    .icon:nth-of-type(1){
+        --degrees : 225deg;
+        transform: translate(
+            calc(  -0.70710678  * var(--offset)),
+            calc(   -0.70710678  * var(--offset))
+          );
+       }
+       .icon:nth-of-type(2){
+        --degrees : 270deg;
+        transform: translate(
+            calc(0  * var(--offset)),
+            calc( -1  * var(--offset))
+          );
+       }
+    
+       .icon:nth-of-type(3){
+        --degrees : 315deg;
+        transform: translate(
+            calc(0.707 * var(--offset)),
+            calc(-0.707 * var(--offset))
+          );
+       }
+   }
+}

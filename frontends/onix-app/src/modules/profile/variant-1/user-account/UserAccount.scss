@@ -1,0 +1,42 @@
+
+.member-level{
+    background: var(--memberlvl-icon-bg);
+}
+.profile-inner-container{
+    background: var(--profile-container-bg);
+    color: var(--profile-container-text);
+}
+.field-box{
+    background: var(--bg-input);
+    border: 1px solid var(--bdr-input);
+    color : var(--text-input);
+}
+.field-box-referral{
+    background: var(--bg-input);
+    border: 1px solid var(--bdr-input);
+    color: var(--text-input);
+}
+.verified {
+    background: #e9fff2;
+    color: #359d74;
+    cursor: default;
+}
+.unverified {
+    background: #c70022;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media only screen and (min-width: 1024px) {
+    // .profile-field-text{
+    //     color: var(--text-2nd);
+    // }
+    .profile-outer-container{
+        background-color: var(--profile-container-bg); 
+    }
+    .field-box{
+        background: transparent;
+        border: 0;
+        color:inherit;
+    }
+}

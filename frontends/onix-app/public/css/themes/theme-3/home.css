@@ -1,0 +1,47 @@
+:root{
+   --bg-listItem :radial-gradient(100% 100% at 50% 0%, #e2d9ff 0%, rgba(0, 0, 0, 0.00) 100%) ; 
+   --bdr-onListItem : 1px solid #29039E; 
+   /*New*/
+ 
+ /* home */
+ --lwd-shape-bg: transparent; 
+ 
+ 
+ /* carousel */
+ --carousel-dot-bg: #cccccc;
+ --carousel-dot-active-bg: #0b72e7;
+ /* carousel end */
+    
+  /*
+  
+  /*scoped home page vars */
+  /*on mobile home hav*/
+   --bg-homeNav: linear-gradient(179deg, #3D01FD 0.92%, #17005F 100.49%); 
+   
+.mainNav__home .content{
+   color: var(--text-invert );
+   
+}
+  /*home promotions*/
+   --bg-homeContent: linear-gradient(180deg, #D0C1FF 0%, #FFF 100%);
+   --text-onHomeContent: var(--text) ;
+    
+  --bg-homeListContent : linear-gradient(180deg,  var(--bg-2nd) 0%,  var(--bg-4th) 100%); 
+   --shadow-homeListContent :  var(--shadow);  /*for Light Mode, use shadow */
+   
+  
+
+   /*OLD*/
+}
+
+#withdraw-slider .content, #deposit-slider .content{
+   background : url('https://files.sitestatic.net/assets/imgs/onixv2/ui/theme-3/last_trx_item_bg.webp') , var(--bg-2nd);
+   background-repeat: no-repeat; 
+  }
+
+  #withdraw-slider .item.active .content, #deposit-slider .item.active .content{
+   background : url('https://files.sitestatic.net/assets/imgs/onixv2/ui/theme-3/last_trx_item_bg_active.webp') , var(--bg-2nd);
+   background-repeat: no-repeat; 
+   color:white;
+   --text: white;
+  }

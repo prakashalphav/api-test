@@ -1,0 +1,30 @@
+.feedback-success{
+    color: rgb(28, 209, 8);
+}
+.feedback-error{
+    color: rgba(241, 24, 70,1);
+}
+#result-text{
+    background:rgba(241, 24, 70,1);
+}
+.pay-opt {
+    background: var(--bg-payopt);
+    color: var(--text-onPayopt);
+    border: 1px solid transparent;
+    &.active {
+      background: var(--bg-payopt-active);
+      border-color: var(--bdr-onPayOpt-active);
+      color: var(--text-onPayOpt-active);
+     
+    }
+}
+
+.pay-opt__flag {
+  background: var(--bg-payOptFlag);
+  &.active {
+    background: var(--bg-payOptFlag-active);
+  }
+}
+.pay-opt__name {
+  color: var(--text-onPayOptFlag);
+}

@@ -1,0 +1,43 @@
+.providerSlider{
+    background: var(--bg-brand-blend);//#1B2435;
+}
+
+.splide__arrow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    // background: linear-gradient(270deg, #101529 0%, rgba(16, 21, 41, 0) 81.66%);
+  }
+  
+  .arrowIcon{
+    color: var(--text-accent);//#F4E303;
+    border: 0;
+    border-radius: 50%;
+    background: var(--bg-3rd);//rgb(111 111 111 / 51%);
+    padding: 6px;
+  }
+ 
+  @screen lg{
+    .arrowIcon{
+      background: transparent;
+      padding: 0px;
+    }
+  
+    .splide__arrow {
+      background: linear-gradient(270deg, #101529 0%, rgba(16, 21, 41, 0) 81.66%);
+    }
+  }
+
+  button{
+    transition: transform 1000ms;
+  }
+
+  button:hover{
+    transform: scale(.8);
+  }

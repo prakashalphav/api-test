@@ -1,0 +1,33 @@
+
+.footer{
+    background: var(--bg-3rd);
+    color:var(--text);
+} 
+.content{
+    // background: #272727;
+ 
+} 
+.divider{
+    background: var(--bg-4th);
+    //background: #504C50;
+    height: 1px;
+}
+.title{
+    color:var(--text); 
+    
+    //color: #fff;
+    font-weight: bold;
+}
+.navItem{
+    transition: transform .3s;
+    &:hover{
+        transform: translateX(10px);
+    }
+}
+.social-icons{
+    color:var(  --text);
+    transition: transform .3s;
+    &:hover{
+        transform: scale(1.25);
+    }
+}

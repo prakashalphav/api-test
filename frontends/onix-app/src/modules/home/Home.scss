@@ -1,0 +1,41 @@
+
+ 
+
+.mainNav__home .content{
+    background: var(--bg-homeNav);
+    
+ }
+
+
+.lotteryResults__home .content{
+
+    background : var(--bg-homeListContent);
+    color : var(--text);
+    box-shadow: var( --shadow-homeListContent);
+ 
+}
+
+.promos__home .content{
+    
+    background : var(--bg-homeContent);
+    color : var(--text-onHomeContent);
+}
+
+.sectionTitle__home{
+  //  background: var(--text);
+    color:var(--text);  
+    
+    
+}
+.sectionTitle__home--accent{
+ //   background: var(--text-accent);
+    color:var(--text-accent);  
+}
+
+.contacts__home   {   
+    color:var(--text-2nd)
+ }
+ .contacts__home .content { 
+    background : var(--bg-homeContent);
+    // color : var(--text-onHomeContent);  
+ }

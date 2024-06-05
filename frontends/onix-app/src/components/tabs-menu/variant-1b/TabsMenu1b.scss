@@ -1,0 +1,25 @@
+.tabsMenu{
+    background: var( --bg-brand);
+    border : 1px solid var(--bg-brand-contrast);
+    // background: #000;
+    // border : 1px solid #353535;
+    color: var( --bg-brand-heavy-contrast );
+
+}
+
+.tabItem{
+    
+    border: 1px solid var(--bg-brand-contrast);
+    background: linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);
+    color: var( --bg-brand-heavy-contrast );
+    // border: 1px solid #222;
+    // background: linear-gradient(180deg, #272727 0%, #050505 100%);
+
+    &.active , &:hover{
+        // color: #000;
+        // background:   linear-gradient(180deg, #FFC325 0%, #FF9C19 100%);
+
+        color: var(--text-onBtn);
+        background: var(  --btn);
+    }
+}

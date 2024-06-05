@@ -1,0 +1,22 @@
+
+.profile-pic-bg{
+    background: var(--memberlvl-icon-bg);
+  
+}
+.member-level-icon svg{
+    display: inline-block;
+}
+.member-level{
+    background: var(--memberlvl-icon-bg);
+} 
+@media only screen and (min-width: 1024px) {
+    .profile-box{
+        background-image: url(/images/ui/profile_bg_gold.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        color : black;
+    }
+    .profile-pic-bg{
+        background: transparent;
+    }
+}

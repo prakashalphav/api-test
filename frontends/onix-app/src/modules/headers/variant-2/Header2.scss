@@ -1,0 +1,66 @@
+.header{
+   // background: #1B1B1B;
+   background: var(--bg);  
+   color: var(--text); 
+}
+
+.iconPromoNBonus{
+    background:var(--bg-accent);
+    color: var(--text-onBgAccent);
+    //--bg-accent :   linear-gradient(90deg, #F6D2A0 0%, #CF8429 100%)
+    
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.labelPromoNBonus{
+    background: transparent;
+    border: 1px solid var(--bdr-accent);
+    //--bdr-accent : #D99948;
+    // border-image-source: radial-gradient(97.14% 97.14% at 50.63% 2.86%, #7AAAFF 0%, #0282C1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.loginBtn{
+    //--text-onBtn2nd: #000;
+    color: var(--text-onBtn);
+    //--btn-2nd :linear-gradient(180deg, #FFC325 0%, #FF9C19 100%)
+    border : var(--bdr-onBtn);
+    box-shadow: var(--shadow-onBtn) ;
+    background:  var(--btn ); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */ 
+
+}
+
+@screen lg{
+    .header{
+        background:linear-gradient(180deg, var(--bg) 65.38%, transparent 96.71%)
+
+    }
+}
+
+.surfaceTop{
+    background: inherit;
+     &.fixed { 
+   
+      height: 64px;
+      @media (max-width: theme('screens.md')) {
+        height: 55px;
+      }
+    } 
+} 
+    
+.blkPadding{
+    border-bottom: 64px solid transparent;
+    @media (max-width: theme('screens.md')) {
+      border-bottom: 55px solid transparent;
+    }
+}
+
+.walletIcon {
+    background: var(--bg-hdrBtnIcon);
+  color:var(--text-onHdrBtnIcon);  
+}
+.navItem{
+    transition: transform .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,17 @@
+.boxInputSearch { 
+    background: var(--bg-2nd);
+    color: var(--text);
+    min-width: 236px; 
+    .inputSearchIcon{
+      border-radius: 50px; 
+      background: var(--btn);
+      color: var(--text-onBtn);
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 50px; 
+      @screen md{
+        width: 100px;
+      }
+    }
+}

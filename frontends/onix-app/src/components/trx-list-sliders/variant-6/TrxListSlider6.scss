@@ -1,0 +1,59 @@
+.title {
+  color: #ffffff;
+}
+.topWrapper {
+  margin-top: 85px; //45px is without margin, so 45 + 40px
+  @screen sm { //60px is without margin, so 60 + 67px
+    margin-top: 127px;
+  }
+}
+.outerBox {
+  height: 100%;
+  position: relative;
+  background: linear-gradient(270deg, #f9401b, #fc6f11);
+  padding: 3px;
+}
+.innerBox {
+  background-color: #332002;
+  padding: 4px 10px 4px 10px;
+}
+.nameWrapper {
+  color: #fff;
+}
+.timeWrapper {
+  font-size: 6px;
+  color: #e1e1e1;
+  top: 15px;
+  right: 5px;
+  @screen sm {
+    top: 10px;
+    font-size: 7px;
+  }
+}
+.avatarWrapper {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  @screen sm {
+    width: 80px;
+    height: 80px;
+    bottom: 30px;
+  }
+}
+.depoAvatarWrapper {
+  width: 50px;
+  height: 50px;
+  @screen sm {
+    width: 60px;
+    height: 60px;
+  }
+}
+.yellowBox {
+  background: #ff9f0f;
+}
+.depoLeft .outerBox {
+  background: linear-gradient(to right, #5b2f08, #5d2806);
+}

@@ -1,0 +1,108 @@
+.custom-slider {
+  --trackHeight: 10px;
+  --thumbRadius: 24px;
+  --ProgressPercent: 0px;
+}
+
+/* style the input element with type "range" */
+.custom-slider input[type="range"] {
+  position: relative;
+  appearance: none;
+  /* pointer-events: none; */
+  background: transparent; // clears out the default background that is applied to the input.
+  cursor: pointer;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+/* ::before element to replace the slider track */
+.custom-slider input[type="range"]::before {
+  content: "";
+  position: absolute;
+  width: var(--ProgressPercent, 100%);
+  height: 100%;
+  background: linear-gradient(90deg, #6738FB 0%, rgba(182, 158, 255, 0.01) 100%);
+  /* z-index: -1; */
+  pointer-events: none;
+  border-radius: 999px;
+}
+
+/* `::-webkit-slider-runnable-track` targets the track (background) of a range slider in chrome and safari browsers. */
+.custom-slider input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(270deg, #C3C3C3 0%, rgba(195, 195, 195, 0.00) 98.8%);
+  height: var(--trackHeight);
+  border-radius: 999px;
+}
+
+/* `::-moz-range-track` targets the track (background) of a range slider in Mozilla Firefox. */
+.custom-slider input[type="range"]::-moz-range-track {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(270deg, #C3C3C3 0%, rgba(195, 195, 195, 0.00) 98.8%);
+  height: var(--trackHeight);
+  border-radius: 999px;
+}
+
+
+/* `::-webkit-slider-thumb ` targets the thumb in  Chrome, Safari, Opera, and Edge Chromium */
+.custom-slider input[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  /* top: 50%; 
+    transform: translate(0, -50%);
+    */
+  width: var(--thumbRadius);
+  height: var(--thumbRadius);
+  margin-top: calc((var(--trackHeight) - var(--thumbRadius)) / 2);
+  background: #6738bf;
+  // background-image: url("/src/assets/img/slider.png");
+  // background-size: cover;
+  border: 4px solid #ddd;
+  border-radius: 999px;
+  pointer-events: all;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 1;
+}
+
+/* `::-moz-range-thumb ` targets the thumb in  Chrome, Safari, Opera, and Edge Chromium */
+.custom-slider input[type="range"]::-moz-range-thumb {
+  position: relative;
+  width: var(--thumbRadius);
+  height: var(--thumbRadius);
+  border: none;
+  /*Removes extra border that FF applies*/
+  // border-radius: 0; /*Removes default border-radius that FF applies*/
+  border: 4px solid #fff;
+  border-radius: 999px;
+  background: #6738bf;
+}
+
+/***** Focus Styles *****/
+/* Removes default focus */
+.custom-slider input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.custom-slider input[type="range"]:focus::-webkit-slider-thumb {
+  // border: 1px solid #053a5f;
+  // outline: 3px solid #053a5f;
+  // outline-offset: 0.125rem;
+  outline: none;
+}
+
+/******** Firefox ********/
+.custom-slider input[type="range"]:focus::-moz-range-thumb {
+  // border: 1px solid #053a5f;
+  // outline: 3px solid #053a5f;
+  // outline-offset: 0.125rem;  
+  outline: none;
+}
+
+/****** OTHER components ******/
+.slider-btn {
+  background: white;
+}

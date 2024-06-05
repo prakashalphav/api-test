@@ -1,0 +1,132 @@
+:root {
+
+/* referral */
+/* --ref-close-icon-bg */
+--icon-refClose: #02c793;
+/* --ref-lvl1-icon-bg  */
+--text-refColumn: #8f96a1;
+/* --ref-lvl2-icon-bg: #8263ff; */
+--text-refColumn-2nd: #8263ff; 
+/* --ref-lvl2-icon-color: #c9bdff; */
+--text-refColumn-3rd: #c9bdff;
+/*   
+/* referral end*/
+
+
+
+/* Lobby Game Listing*/
+/* Lobby Game Listing*/
+/* --lobby-gameitem-bg: #19191D;
+--lobby-gameitem-bd-color: #79461D;
+--bg-imgOverlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.19%, #020316 85.19%); */
+/* Lobby Game Listing end*/
+/* Lobby Game Listing*/
+--bg-lobbyGame: #19191D;
+--bdr-onLobbyGame: #79461D;
+--text-onLobbyGame: var(--text);
+--bg-imgOverlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.19%, #020316 85.19%);
+/* Lobby Game Listing end*/
+
+
+/* --bg-labelHot */
+--bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+/* --text-onLabelHot */
+--text-onLabelHot: #ffffff;
+/* --bg-labelNew */
+--bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+--text-onLabelNew: #ffffff;
+/* --text-onLabelNew */
+
+
+
+/*OLD*/
+   
+
+/* member level */
+--memberlvl-icon-bg: linear-gradient(to right, #DBBE91, #79461D);
+--memberlvl-new-bg: #ffffff;
+--memberlvl-label-color: #BAB6B6;
+--memberlvl-value-color: #C5B7B7;
+--memberlvl-desc-bg: radial-gradient(100% 100% at 49.95% 0%, #2A365F 0%, #141427 43.92%, #00011D 100%);
+--memberlvl-desc-inner-bg: #0B0C30;
+--memberlvl-desc-bg2: #FFA800; 
+/* member level end*/
+
+
+
+/* profile */
+--profile-container-bg: #ffffff;
+--profile-container-text : #000000;
+--profile-muted-bg: #F2EFFA;
+--field-text-color :#000000;
+
+--note-bg: #EDEDED;
+--note-text-color: #000000;
+--text-muted :#c5c5c5;
+/* profile end*/
+
+
+/* table */
+
+--pagination-item-color: #000000;
+--pagination-item-bg: #E9E2FF;
+--pagination-item-hover-bg: #c1a9dc;
+--bdr-tr: #c5c5c5;
+/* --tbl-row-muted-bd-color: #D1D0D6;
+--tbl-row-muted-bg: #c5c5c5;  */
+--bg-thead: #261E40;
+/* --tbl-row-light-text: #ffffff; */
+--text-thead: #ffffff;
+/* --tbl-muted-dark-text: #828282; */
+--text-thMuted: #828282;
+/* table end*/
+
+/* deposit */
+--bg-payopt: #ededed;
+--text-onPayopt: #000000;
+--bg-payopt-active: #f2effa;
+--text-onPayOpt-active: #000000;
+--bdr-onPayOpt-active: #5f2efa;
+--bg-payOptFlag: rgba(128, 152, 146, 1);
+--bg-payOptFlag-active: rgba(0, 166, 126, 1);
+--text-onPayOptFlag: rgba(28, 27, 27, 1);
+--bg-payOptMethod: #ffffff;
+--bg-payDetail: linear-gradient(180deg, #CEC2F4 0%, rgba(242, 239, 250, 0) 100%);
+--bg-appyPromo: #bff5de;
+--text-onAppyPromo: #000000;
+--bg-bonusEvt: #bff5de;
+--bdr-onBonusEvt: #156f4a;
+--bg-eventDesc: #777777;
+--text-onEventDesc: #ffffff;
+/* deposit end*/
+
+ 
+/* memo */
+--memo-bg: #F1F1F1;
+--memo-bd-color: #D0D0D0;
+--memo-del-btn-bg: #F4F4F4;
+--memo-del-btn-bd-color: #B1B6B6;
+--memo-text-light: #808080;
+--memo-text-dark: #524D4D;
+--memo-text-darker: #212223;
+/* memo end*/
+
+
+
+/* GameListing */
+/* --provider-slider-arrow: #B6B6B6;
+--provider-list-bg: #000000;
+--provider-img-bd-color: #79461D;
+--game-search-input-bg: #636363;
+--game-search-input-text: #000000;
+--bg-labelHot: linear-gradient(180deg, #FF0000 0%, #E00A0A 84.37%);
+--text-onLabelHot: #ffffff;
+--bg-labelNew: linear-gradient(180deg, #3B37FD 0%, #0400C5 100%);
+--text-onLabelNew: #ffffff;
+--game-item-bg: #000000;
+--sublobby-container-bg: #ffffff;
+--sublobby-container-text: #000000; */
+/* GameListing end*/
+
+
+}

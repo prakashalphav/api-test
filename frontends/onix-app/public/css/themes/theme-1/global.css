@@ -1,0 +1,182 @@
+:root{
+    /*body background */
+      /* --bg-color*/
+    --bg : #000000;
+     
+    --bg-invert : #ffffff;
+    /*get from the promotion page*/
+    --bg-2nd: #171317; /* lowest contrast */
+    --bg-3rd: #262529;  /* contrast */
+    --bg-4th: #a5a5a6; /* heavy contrast */ 
+    --bg-invert: #ffffff;
+     
+    /*tooltip*/
+    --shadow:  0 1px 8px rgba(0,0,0,0.3);
+    /*bg-accent can be gradient*/
+    --bg-accent :  linear-gradient(180deg, #FFC325 0%, #FF9C19 100%);
+    --text-onBgAccent: #000;
+    --bdr-accent : #FFC325;
+
+
+    --bg-brand-blend : #100147 ; /*blend with --bg*/
+    --bg-brand-blend-invert : #750181;
+  
+    --bg-brand:  #0C168A; /*brand should be darkest to lightest*/
+    --bg-brand-2nd:  #0C168A ; 
+    --bg-brand-contrast:  #B5058E; /*used for gradients and anything that does not have text on it like scroller*/
+    --bg-brand-heavy-contrast :rgb(220, 170, 209); /*this used for text on bg-brand-**/
+    --text-onBgBrand :#fff;
+
+   /* mobile bottom bar - BottomBar2 */
+   --bg-mobileBottomButton: linear-gradient(180deg, #fff 0%, #9b9b9b 100%);
+   --text-mobileBottomButton: #000;
+   --shadow-mobileBottomMenu: rgba(0,0,0,.9);
+
+    /*body text color*/
+    --text: #ffffff; /*title , head - primary*/
+    --text-2nd:#ffffffc8;  /* body text - secondary*/
+    --text-3rd:#ffffff75;/* muted text  - tertiery*/
+    --text-invert:#000000;
+    /* --text-2nd:70% opacity
+    --text-3rd:50% opacity */
+    --text-accent: #F0A500;
+    --text-brand: #F801C1;
+    /*Header*/
+    /* --header-bg  */
+    --bg-hdr:var(--bg);
+    /* --topbar-bg */
+    --bg-hdrContent: linear-gradient(180deg, #08105B 0%, #B5058E 100%, #B5058E 100%);
+    /* --topbar-login-text */
+    --text-onHdrContent: #ffffff;
+    /* --topbar-login-bg */
+    --bg-hdrTopContent :  linear-gradient(180deg, #0D19A3 0%, #08105B 100%);
+
+
+    /* --header-btn-bg */
+    /* --btn-hdr */
+    
+    --btn: linear-gradient(180deg, #FFF 0%, #9B9B9B 100%);  
+    --text-onBtn: #000544;  
+    --bdr-onBtn: none;
+
+    /* --header-btn-text */
+    /* --text-onbtnhdr: #ffffff; */
+    --btn-2nd : transparent;
+    --text-onBtn2nd: currentColor;
+    --bdr-onBtn2nd: 1px solid currentColor;
+    --shadow-onBtn2nd:none;
+
+    --btn-3rd : transparent;
+    /* --text-onBtn3rd: rgb(255 255 255 / 87%); */
+    --bdr-onBtn3rd: 1px solid rgb(255 255 255 / 40%);
+
+
+      /*if content__pg is invert color of bg, then neutral need a color that visible on both background*/
+      /* --input-muted-dark-bg */
+      --btn-neutral:#d4d4d4;
+      /* --input-muted-dark-bd-color */
+      --bdr-neutral:#909191;
+
+    /* --header-icon-bg */
+    --bg-hdrBtnIcon : linear-gradient(180deg, rgba(85, 11, 114, 0) 0%, #970ECC 100%);
+    /* --header-icon-color */
+    --text-onHdrBtnIcon: #EC06C5;
+
+    /*--wallet-ref-icon-color */
+    --icon-hdrCta: #18B861;
+
+    --btn-file: #2F3233;
+    --bdr-onBtnFile: #ffffff;
+
+    --bg-modal : var(--bg-invert);
+    --text-onModal: var(--text-invert);
+    --bdr-onModal :  #b4b4b4;
+    --bg-onModalContent : transparent;/*bg of input on Modal will use this var*/
+
+    --bg-pgContent : var(--bg-2nd);
+    --text-onPgContent : var(--text);
+    --text-onPgContent-2nd : var(--text-2nd); 
+    /*input is affected by bg-pgContent*/
+    /* --bg-input */
+    /* --bg-input: */
+    --bg-input : transparent;
+    /* --bdr-input */
+    --bdr-input:var(--text-2nd) ; /* #b4b4b4;  */
+    /* --text-input */
+    /* --text-input : var(--text-2nd); */
+    /* --input-muted-hover-bd-color */
+    --bdr-input-hover: #5f2efa;
+    /* --bg-input-disabled */
+    --bg-input-disabled: #6B6A6B;
+
+     
+
+/* member level */
+--gold-lvl-bg: linear-gradient(90deg, #DBBE91 0%, rgba(121, 70, 29, 0.95) 100%);
+--gold-lvl-text-color: #ffff00;
+--new-lvl-bg: #ffffff;
+--new-lvl-text-color: #ffffff;
+/* member level end*/
+
+
+/* profile popup */
+--popup-bg : #171317;
+--popup-head-bg : #171722;
+--popup-text-accent : #6B6A6B;
+--popup-icon-bg : #08105B;
+--popup-info-bg : linear-gradient(270deg, #450EFD 0%, #6C39FE 100%);
+--popup-light-bg : #ffffff;
+--popup-text-dark : #000000;
+--popup-text-light : #ffffff;
+
+--popup-icon-bd-color : #FF00C7;
+--popup-icon-color : #ffffff;
+--popup-icon-light-bg : #f2f1f5;
+--popup-icon-text : #313131; 
+--bg-popUpMenu-hover : #EFEBFA;
+/* --sidenav-menu-text: #10EAF0; */
+/* profile popup end*/
+
+/* checkbox */ 
+--cbx-bg : #ffffff;
+--cbx-color : rgba(95, 46, 250, 1);
+--cbx-bd-color : #ABABAB;
+/* checkbox end*/
+ 
+--toggle-btn-bg: #585858;
+--toggle-btn-bd-color: #858586;
+--toggle-btn-active-bg: #F5FFEE;
+--toggle-btn-color: #ffffff;
+--toggle-btn-active-color: #00FF0A;
+
+/*OLD*/
+  
+--logout-btn-bg: linear-gradient(180deg, #0D19A3 0%, #08105B 100%);
+--logout-btn-color: #ffffff;   
+
+
+/*bottom bar*/ 
+--bottom-nav-bg : #fff;
+--bottom-nav-color :   #5E5F60;
+--bottom-nav-color-active :  #de4a03;
+--bottom-popup-icon-bg: radial-gradient(circle, rgb(255 173 29), rgb(122 17 0)); 
+--bottom-popup-icon-color :#fff;
+--bottom-popup-icon-color-active : #5E5F60;
+--bottom-center-bg:radial-gradient(circle, rgb(254,187,69), rgb(212,32,3));
+--bottom-center-color:#fff;
+/*bottom bar end*/
+  
+--scroller-bg: rgb(106, 106, 106) darkgrey;
+--bg-scrollbarTrack: var(--bg-brand-blend);
+
+--bg-scrollbarThumb:var(--bg-brand-blend-invert );
+--bdr-scrollbarThumb: var(--bg-brand-blend);
+
+ 
+
+}
+
+.idrgaming .headerMainNav,.idrgaming  .bottomBar ,.idrgaming  .headerWrapper{
+  --bg-brand-2nd:  #0C168A; 
+  --bg-brand-contrast:  #0C168A;
+  }

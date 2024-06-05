@@ -1,0 +1,21 @@
+export const SportsIcon= ()=>(<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1em" height="1em" viewBox="0 0 45 39" enable-background="new 0 0 45 39" xml:space="preserve">  <image id="image0" width="45" height="39" x="0" y="0"
+href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAnCAQAAAAxiAl3AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+cwAACxMAAAsTAQCanBgAAAAHdElNRQfnAhsKFAwQwhzMAAAC4UlEQVRIx63WXUhTYRgH8P9My802
+Vy0rLIoSBEmN0kCpVIoyNMLEyCRICxK7CuqiQAsqL8IgIjXqog8wiEyCwgzCj7rIUNPUVDA/c5qt
+aTrnch/n38WWHYfLzXOem8P79eM5z3vecw7wn+BRbgYARrKOM7wNucK0WhjiU4AhHCdJ0hrry3o/
+z0O1YYrQiQj4V0VC6+yZTpSJzuxpNvVPw5HeMWh29nwKlK0kp+8IZAEUNe9I0sDsTNnooLUNRpJl
+5QUkabK0xslGAyeuzpDkhHMbaWS2bPQ63X29wDnxWDZcE1v3fa7NAtlw+1c32qZXyQInBgpuFSF5
+Rp6kldM2d1n4IA8d0KcXs012krQlyWIbmsR0XuldG8lWqmWgx1rE9PQxbcKrCdLxULqsMHaLaUch
+kHtZT5IXJdM9H8V05UtApz5ZQ9ZWSy9InZi2T3ATkJt6oGnVEcn0ZKPbs3dPepUBAEyn+5ExM92b
+lX4LwJqx/VC4daqQKz3j3ezn/HFIGqzjCD1FC7WuWVl8wI2+0nliq1t4MjUHz3HOstSTHHIUMtpr
+2LpdGP3nvBCibyalVFhFdIMjj1VC5+wmD7Yv9TZn1xkU6OANY3AGAL+g4/mGN+ydfQE6L8OcYjun
+2JXsnbzEME6SJZMJ7Vlt6vC/3erw5Rnxt8R7W2rVFmlK1ec1xcoNXmbd2UCSvZcQoNW6DfmnVfwi
+SbYxuTF4r49bCPyoJMn+a/MOquKeFzlKhKiisGU+w4CpgySfnfNUsOCYFZE7AhYBAwNdpI2n9ixq
+8QIFaSGbh9cELV7w+A5RqgBzzagZAKhlErdIzpYrqeMF9pFkfT4AMMH1f50vCf6dIj7LxisAIHxx
+Ncepk1CQkJ/FloHZ1ogSSFUpIlxN7WiUpLyDtqmv76yOf5/WnTO57zAA5etvzqT7LDFbJdcbgGK9
+UhnqvKeYs2X2z3wrHHy00IfDjfBmjnoX4jkwVQ67L/QfMduqX9qFTigAAAAldEVYdGRhdGU6Y3Jl
+YXRlADIwMjMtMDItMjdUMDk6MjA6MTIrMDE6MDBU5WAKAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIz
+LTAyLTI3VDA5OjIwOjEyKzAxOjAwJbjYtgAAAABJRU5ErkJggg==" />
+</svg>
+);

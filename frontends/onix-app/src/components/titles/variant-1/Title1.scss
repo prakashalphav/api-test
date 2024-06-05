@@ -1,0 +1,18 @@
+
+
+.title{
+
+    color : var(--text); 
+    border-color: var(--text-3rd); 
+    // color: var(--page-title-sm-color);
+    // background:var(--page-title-sm-bg);
+    // @media (max-width: theme('screens.sm')) {
+    //     color: var(--page-title-color);
+    //     background:var(--page-title-bg);
+    // }
+    & > *{
+        border-color:inherit;
+    }
+}
+
+ 

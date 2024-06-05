@@ -1,0 +1,39 @@
+
+  
+    .spicr .item{
+      float :none;
+      display:block;
+      margin-right: 0;
+    }
+  
+    .spicr-control {
+      width: 3em;
+    }
+    .content {
+      border: none; 
+      padding: 1px;
+      opacity: 0;
+    }
+  
+    
+    @for $i from 0 through 4 {
+        .item:nth-of-type(#{$i + 1 }) .content.animate {
+            --animate-delay: #{800ms * ($i  )}; 
+        }
+     
+    
+      }
+
+      .img-wrapper{
+        width: 100px;
+        height: 90px;
+      }
+ 
+    
+    .spicr-control .arrow-prev, .spicr-control .arrow-next{
+        border-radius: 50%;
+        // border: 2px solid var(--bg-4th); 
+        background-color:var(--bg-4th);
+        padding: 5px;
+    }
+ 

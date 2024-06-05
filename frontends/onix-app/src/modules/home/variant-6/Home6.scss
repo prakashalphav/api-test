@@ -1,0 +1,185 @@
+
+// .title{
+//     background: linear-gradient(90deg, #F7D2A0 0%, #CF8429 100%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     background-clip: text;
+//     text-fill-color: transparent;
+    
+//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// }
+
+
+.fade-in-bottom {
+    --fade-in-translateY : 20px; 
+    --animate-delay :1s;
+}
+.contacts-container .fade-in-bottom {
+    --fade-in-translateY : 150px; 
+    --animate-delay :1s;
+    --animate-duration :2s;
+ }
+ 
+  h2.animate{
+    --animate-delay: 0.5s;
+    --slide-in-translateY: 20px; 
+  }
+.grid-games.animate {
+    --animate-delay: 2s;
+}
+
+.slide-in-br.animate ,.slide-in-tl.animate {
+  --animate-delay: 0.5s; 
+  --animate-duration: 2s;
+}
+
+.trxs .title.animate {
+  --animate-delay: 2s; 
+}
+
+.trxs-slider.animate {
+    --animate-delay: 3s;
+    --fade-in-translateY : 100px; 
+}
+
+ 
+
+.sectionTitle__home, .sectionTitle__home--accent{
+
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-clip: text;
+  // text-fill-color: transparent;
+}
+  
+
+ 
+ 
+ 
+.descAdvantage{
+  // color: #7B909B;
+  color:var( --bg-brand-heavy-contrast);
+}
+.btnAdvantage{ 
+  // color:var(--text-onBgBrand); 
+  // background:linear-gradient(180deg, var(--bg-brand-contrast) 0%, var(--bg-brand-2nd) 100%);  
+
+  color:var(--text-onBtn); 
+  background:var(--btn); 
+
+
+//   color: #000; 
+// background: linear-gradient(180deg, #FFC325 0%,     #FF9C19 100%);
+}
+.boxAdvantage{
+  border: 1px solid var(--bg-brand-contrast);
+}
+.boxAdvantage, .boxLatestTrxs{
+  color:var( --text-onBgBrand);
+
+background: radial-gradient(95.32% 133.16% at 50% -20%, var(--bg-brand-blend-invert) 0%, var(--bg-brand-blend) 50.91%, var(--bg-brand-blend) 99.98%, var(--bg-brand-blend) 99.99%);
+
+// background: radial-gradient(95.32% 133.16% at 50% -20%, #6D5006 0%, #030303 50.91%, #030303 99.98%, #030303 99.99%);
+}
+.titleLatestWinners{
+  background: -webkit-linear-gradient(#FFED68 0%, #C4A002 50%) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.titileLatestDeposits{
+  background: -webkit-linear-gradient(#FBFBFB 26.56%, #868686 86.98%) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+ 
+.jackpot-img{
+  // width: 626px;
+  // height: 229px;
+  // background-image: url("https://files.sitestatic.net/progressive_img/640acf0372953_Jackpot.png");
+}
+
+
+
+.marqueeAnn{
+  color:var(--text-onBgBrand);
+  background: linear-gradient(180deg, transparent, var(--bg-brand-2nd) 100%);
+}
+
+.boxAdvantage{
+  --saturation-factor: 1; 
+}
+
+
+
+.containerShine {
+  position: absolute;
+  top: -50%;
+  bottom: 0;
+  right: 0;
+  left: -50%;
+}
+
+.animShine  {
+--white-500-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
+
+
+  animation-duration: 2s;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  color: hsl(var(--white-500-hsl)/.1);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.delayAnimShine1{
+  animation-delay: .75s;
+}
+
+.delayAnimShine2{
+  animation-delay: 1.25s;
+}
+
+.delayAnimShine3{
+  animation-delay: 2s;
+}
+
+@keyframes shine {
+  0% {
+      transform: translate3d(-50%,0,0)
+  }
+
+  to {
+      transform: translate3d(200%,0,0)
+  }
+}
+
+
+.shapeShine{
+  width: 56px;
+
+/*shine*/
+  background-color: currentColor;
+  height: 300%;
+  position: relative;
+  top: -100%;
+  transform: rotate(30deg);
+
+
+/*shapeShine child position*/
+flex-wrap:nowrap;
+justify-content: center;
+align-items: center; 
+
+  flex-direction: row;
+  display: flex;
+}
+
+.innerShapeShine{
+  width: 16px; 
+
+ background-color: currentColor;
+  height: 100%;
+
+}

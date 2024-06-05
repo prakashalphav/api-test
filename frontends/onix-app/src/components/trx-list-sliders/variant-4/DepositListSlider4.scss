@@ -1,0 +1,54 @@
+ 
+.splide__track{
+  overflow: hidden;
+}
+.wrapper{
+  background-image: url("https://files.sitestatic.net/assets/imgs/onixv2/wingaming/last_deposit_wrapper.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%; 
+  height: 434px;
+  max-width: 100%;
+  margin: auto;
+}
+.mainTrxName{
+  color: #fff;
+}
+.mainTrxAmt{
+  background: linear-gradient(180deg, #FBFBFB 26.56%, #868686 86.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.trxRow{
+  background-image: url("https://files.sitestatic.net/assets/imgs/onixv2/wingaming/last_deposit_row_bg.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.trxName{
+  color: #fff;
+}
+.trxAmt{
+  background: linear-gradient(180deg, #FFE4AF 0%, #CDCDCD 0.01%, #FFF 86.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.splide__slide{
+  height:35px;
+  @screen sm{ 
+    height:50px;
+  } 
+}
+.trxAvatarImg{
+  width: 35px;
+  height:35px;
+  @screen sm{
+    width: 50px;
+    height:50px;
+  } 
+}

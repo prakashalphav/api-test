@@ -1,0 +1,63 @@
+/* only for Firegaming specific color styles*/
+.marqueeAnn, .downloadAppWrapper{
+    background: #232934;
+    // color:var(--text-onBgBrand);
+    // background: linear-gradient(180deg, transparent, var(--bg-brand-2nd) 100%);
+  }
+
+
+ .firegaming .modalContainer{
+    --bg-modal: #080A0CE0; 
+    --bg-onModalContent : var(--bg-modal);
+    --text-onModal : #fff;
+    --bdr-onModal : #fff;
+    
+
+    --text-input: #fff;
+    --bg-input : #2e2e2e; 
+    --bdr-input: #2e2e2e; 
+
+
+    --btn: linear-gradient(360deg, #B7870C -11.76%, #EED904 76.75%, #F4E303 87.21%, #97640E 122.06%);
+    --bdr-onBtn: 6px;
+    --text-onBtn: #000;
+  }
+  
+.profilePopupMenu{
+  @screen sm{ 
+    top: 0 !important;
+    right: -1.5rem !important;
+  }
+ 
+   @screen md{
+    top: 0 !important;
+    right: -1.5rem !important;
+  }
+ 
+   @screen lg{
+    top: -4rem !important;
+  }
+ 
+   @screen xl{
+     top: -4rem !important;
+   }
+}
+
+.walletPopUpMenu,.helpPopUpMenu{
+  @screen sm{ 
+    top: -0.6rem !important
+  }
+ 
+   @screen md{
+    top: -0.6rem !important;
+  }
+ 
+   @screen lg{
+    top: -4rem !important;
+  }
+ 
+   @screen xl{
+     top: -4rem !important;
+   }
+  
+}

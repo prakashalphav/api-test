@@ -1,0 +1,61 @@
+.headerMainNav{
+
+ 
+  --bg-scrollbarTrack:#E9E7E7;/*this can hardcode because the content is hardcoded to be white bg*/
+}
+ 
+ 
+.navItem{
+  // color: #3CDCA0;
+  min-width: 70px;
+  @screen xl{
+    min-width: 90px;
+  }
+
+  &:before{
+    position: absolute;
+    bottom: 5px;
+    width: 90%;
+    height: 3px;
+    border-radius: 5px;
+    background:var(--bg-accent) ;//linear-gradient(90deg, #29B4D5 0%, #3CDCA0 100%);
+    content: "";
+  }
+
+  &:hover{
+    background:  linear-gradient(180deg, transparent 0%, var(--bg-brand-blend) 83.95%);//linear-gradient(180deg, transparent 0%, #323232 83.95%);
+    font-weight: 700;
+    color: var(--text-onBgBrand);
+    .icon{
+      // color: #3CDCA0;
+    }
+  }
+}
+
+.contentInner{
+ color: var(--text-onBgBrand);
+ box-shadow: 0px 13px 38px -9px #00000040 inset;
+ background:  linear-gradient(180deg, var(--bg-brand-blend) 27.63%,  var(--bg-brand) 100%);//linear-gradient(180deg, rgba(16, 21, 41, 0.95) 27.63%, rgba(39, 55, 76, 0.95) 100%);
+ border-bottom: 0.25px solid var(--text-2nd);
+ 
+ 
+}
+
+.optionsContainer{ 
+  background: var(--bg-brand-2nd); 
+  color:var(--text-onBgBrand); 
+}
+
+.optionsDivider{
+    background: var(--bg-brand-contrast);
+}
+
+.hotLabel{
+    background: rgb(228, 6, 6);
+}
+
+.welcomeText{
+    color: var( --bg-brand-heavy-contrast);
+}
+
+ 

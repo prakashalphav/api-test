@@ -1,0 +1,24 @@
+
+
+
+
+.report-item-box {
+    background: var(--bg-3rd);//linear-gradient(180deg, #E4DCFF 0%, rgba(242, 239, 250, 0) 100%);
+    color : var(--text);
+    box-shadow: 0 10px 6px -12px;
+}
+.report-summary-box {
+    background: var(--bg-thead);
+    color : var(--text-thead);
+    // linear-gradient(180deg, #A3D8FF 0%, #FFFFFF 100%);
+    // box-shadow: 0 10px 6px -12px;
+}
+
+.report-text-accent{
+    color : blue;
+}
+
+
+.report-text-link {
+    color :#007bff;
+}

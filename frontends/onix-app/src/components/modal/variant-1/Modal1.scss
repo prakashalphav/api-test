@@ -1,0 +1,42 @@
+ .modalOuterCloseBtn{
+     background: var(--bg-modal);
+    color:var(--text-onModal);
+ }
+ .modalContainer{
+ 
+  background: var(--bg-modal);
+
+  color: var(--text-onModal);
+  --bg-input :var(--bg-modal);
+ 
+  --text-input : var(--text-onModal);
+  --bdr-input :var( --bdr-onModal );
+   --bg-input :var( --bg-onModalContent);
+ 
+}
+
+.modalWrapper{
+   -webkit-animation: zoom-in .3s;
+   animation: zoom-in .3s;
+}
+/**
+* ----------------------------------------
+* animation slide-in
+* ----------------------------------------
+*/
+@-webkit-keyframes zoom-in {
+    0% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes zoom-in {
+    0% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

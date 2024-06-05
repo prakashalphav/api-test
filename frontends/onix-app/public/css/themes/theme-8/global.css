@@ -1,0 +1,203 @@
+:root{
+    /*body background */
+      /* --bg-color*/
+      --bg : #FFF;
+     
+      --bg-invert : #21201d;
+      /*get from the promotion page*/
+      --bg-2nd: #E5DAC7; /* lowest contrast */
+      --bg-3rd: #CEC2AD;  /* contrast */
+      --bg-4th: #a29983; /* heavy contrast */
+       /*tooltip*/
+      --shadow:  0 1px 8px rgba(0,0,0,0.3);
+     /*bg-accent can be gradient*/
+   --bg-accent :  linear-gradient(180deg, #FFC325 0%, #FF9C19 100%);
+   --text-onBgAccent: #000;
+   --bdr-accent : #FFC325;
+
+
+   --bg-brand-blend : #C8B190; /*blend with --bg*/
+   --bg-brand-blend-invert : #652617;
+ 
+   --bg-brand:  #652617; /*brand should be darkest to lightest*/
+   --bg-brand-2nd:  #8F2A12; 
+   --bg-brand-contrast:  #FCE151 ; /*used for gradients and anything that does not have text on it like scroller*/
+   --bg-brand-heavy-contrast :#C8B190; /*this used for text on bg-brand-**/
+   --text-onBgBrand :#fff;
+ 
+      /* mobile bottom bar - BottomBar2 */
+      --bg-mobileBottomButton: linear-gradient(180deg, #fff 0%, #9b9b9b 100%);
+      --text-mobileBottomButton: #000;
+      --shadow-mobileBottomMenu: #FFF;
+
+      /*body text color*/
+      --text: #000000;
+      --text-2nd:#242424;
+      --text-3rd:#424242;
+      --text-invert:#ffffff;
+      /* --text-2nd:70% opacity
+      --text-3rd:50% opacity */
+      --text-accent: #504e4e;
+      --text-brand: #B84429 ;
+      /*Header*/
+      /* --header-bg  */
+      --bg-hdr:#EBE3E0 ;
+      /* --topbar-bg */
+      --bg-hdrContent:   linear-gradient(180deg, #C78248  0%, #A65845 100%);
+      /* --topbar-login-text */
+      --text-onHdrContent: #ffffff;
+      /* --topbar-login-bg */
+     
+      --bg-hdrTopContent :linear-gradient(180deg, #ffdd53 0%, #C78248 100%);
+      
+      /* --header-btn-bg */
+      /* --btn-hdr */
+      
+     
+  /*only this --btn bg color must able put on --bg and --bg-brand*/
+    --btn: linear-gradient(180deg, #FFF 0%, #9B9B9B 100%);  
+    --text-onBtn: #000544;  
+    --bdr-onBtn: none;
+    --shadow-onBtn: none;
+    /* --header-btn-text */
+    /* --text-onbtnhdr: #ffffff; */
+    --btn-2nd : transparent;
+    --text-onBtn2nd: currentColor;
+    --bdr-onBtn2nd: 1px solid currentColor;
+    --shadow-onBtn2nd:none;
+
+  
+      --btn-3rd : transparent;
+      /* --text-onBtn3rd: var(--text); */
+      --bdr-onBtn3rd: 1px solid rgb(90 87 87 / 40%);
+  
+  
+        /*if content__pg is invert color of bg, then neutral need a color that visible on both background*/
+        /* --input-muted-dark-bg */
+        --btn-neutral:#d4d4d4;
+        /* --input-muted-dark-bd-color */
+        --bdr-neutral:#909191;
+  
+      /* --header-icon-bg */
+      --bg-hdrBtnIcon : #B84429;
+      /* --header-icon-color */
+      --text-onHdrBtnIcon: var(--text-onHdrContent);
+  
+      /*--wallet-ref-icon-color */
+      --icon-hdrCta: #18B861;
+  
+      --btn-file: var(--bg-invert);
+      --bdr-onBtnFile: var(--bg-2nd);
+  
+      --bg-modal : #ffffff;
+      --text-onModal: var(--text);
+      --bdr-onModal :  #b4b4b4;
+      --bg-onModalContent : transparent;/*bg of input on Modal will use this var*/
+  
+      --bg-pgContent : var(--bg-2nd);
+      --text-onPgContent : var(--text);
+      --text-onPgContent-2nd : var(--text-2nd); 
+      --bg-pgContentInner : var(--bg);
+
+      /*Mobile content__pg set background same as Desktop*/
+      .content__pg  {
+        background: var(--bg-pgContent); 
+        color : var(--text-onPgContent-2nd);  
+        .title__pg{
+            --text:var(--text-onPgContent); 
+           }
+      }
+
+      /*input is affected by bg-pgContent*/
+      /* --bg-input */
+      /* --bg-input: */
+      --bg-input : #A9A194;
+      /* --bdr-input */
+      --bdr-input: #A9A194; /* #b4b4b4;  */
+      /* --text-input */
+      --text-input : var(--text);
+      /* --input-muted-hover-bd-color */
+      --bdr-input-hover: var(--text-brand); 
+      /* --bg-input-disabled */
+      --bg-input-disabled:rgba(72,72,72, 0.1);
+       /* #494848; */
+       
+  
+  /* member level */ 
+  --gold-lvl-bg: linear-gradient(90deg, #DBBE91 0%, rgba(121, 70, 29, 0.95) 100%);
+  --gold-lvl-text-color: #ffff00;
+  --new-lvl-bg: #ffffff;
+  --new-lvl-text-color: #ffffff;
+  /* member level end*/
+
+  /* profile popup */
+  --popup-bg : #161618;
+  --popup-head-bg : #282829;
+  --popup-text-accent : #5F331E;
+  --popup-icon-bg : #421B08;
+  --popup-info-bg : radial-gradient(100% 66.42% at 0% 48.16%, #FCE151 0%, #8F2A12 100%);
+  --popup-light-bg : #ffffff;
+  --popup-text-dark : #000000;
+  --popup-text-light : #ffffff;
+  --popup-icon-bd-color : transparent;
+  --popup-icon-color : #20D4E0;
+  --popup-icon-light-bg : #B84429;
+  --popup-icon-text : #ffffff;
+--bg-popUpMenu-hover : #efd6b1;
+  /* --sidenav-menu-text: #10EAF0; */
+  /* profile popup end*/s
+  
+  /* checkbox */ 
+  --cbx-bg : var(--bg-input);
+  --cbx-color :  #FFEBDF;
+  --cbx-bd-color : var(--bdr-input);
+  /* checkbox end*/
+   
+  --toggle-btn-bg: #585858;
+  --toggle-btn-bd-color: #858586;
+  --toggle-btn-active-bg: #F5FFEE;
+  --toggle-btn-color: #ffffff;
+  --toggle-btn-active-color: #00FF0A;
+  
+  /*OLD*/
+ 
+  --logout-btn-bg: radial-gradient(100% 584.36% at 0% 51.43%, #FCE151 0%, #8F2A12 100%);
+  --logout-btn-color: #ffffff;
+  
+  
+  /*bottom bar*/ 
+  --bottom-nav-bg : #fff;
+  --bottom-nav-color :   #5E5F60;
+  --bottom-nav-color-active : var(--text-brand)  ;
+  --bottom-popup-icon-bg: radial-gradient(circle, #A65845, #47251c); 
+  --bottom-popup-icon-color :#fff;
+  --bottom-popup-icon-color-active : #5E5F60;
+  --bottom-center-bg:radial-gradient(circle,  #ffdd53, #C78248);
+ 
+  --bottom-center-color:#fff;
+  /*bottom bar end*/
+
+  --bg-scrollbarTrack:  #C6C6C8;
+
+  --bg-scrollbarThumb: #767676;
+  --bdr-scrollbarThumb:  #C6C6C8;
+
+}
+
+.idrgaming .headerMainNav,.idrgaming  .bottomBar ,.idrgaming  .headerWrapper{
+  --bg-brand-2nd:  #8f2a12; 
+  --bg-brand-contrast:  #701f0b;
+  }
+
+.providerGames,.marqueeAnn{
+  --bg-brand : var(--bg-2nd);  
+  --bg-brand-2nd : var(--bg-3rd); 
+  --bg-brand-contrast: var(--bg-4th); 
+  --bg-brand-heavy-contrast:var(--text); 
+  --text-onBgBrand:var(--text);
+
+}
+.boxAdvantage{
+  --bg-brand-blend-invert:#C8B190; 
+  --bg-brand-blend: #652617;  
+} 

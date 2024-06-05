@@ -1,0 +1,23 @@
+ 
+ 
+.splide__arrow {
+    // color: var(--gameslider-nav-text);
+    // background: var(--gameslider-nav-bg);
+    color: #B0B0B0;
+    background: #47444480;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // opacity: .7;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    // transform: translateY(-50%);
+    width: 2.5em; 
+    height: 2.5em;
+    z-index: 1;
+}

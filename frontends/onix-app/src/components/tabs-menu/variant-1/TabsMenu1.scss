@@ -1,0 +1,46 @@
+
+
+
+.tabs-nav {
+    background: var(--bg-3rd);
+    .menu-active {
+        position: relative;
+           &::before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: calc(100% + 1px);
+                height: calc(100% + 1px);
+                content: "";
+                background: var(--btn);
+                z-index: 0;
+                border-radius: 4px;
+            }
+            // &::after{
+            //     position: absolute;
+            //     left: 1px;
+            //     top: 1px;
+            //     width: calc(100% - 1px);
+            //     height: calc(100% - 1px);
+            //     content: "";
+            //     background: var(--btn-2nd);
+            //     border-radius: 4px;
+            //     z-index: 1;
+            // }
+            span {
+                background: var(--text-onBtn);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                z-index: 9;
+                
+            }
+
+        }
+
+        button, a {
+           
+            color: var(--text-2nd);
+           
+           
+        }
+    }
